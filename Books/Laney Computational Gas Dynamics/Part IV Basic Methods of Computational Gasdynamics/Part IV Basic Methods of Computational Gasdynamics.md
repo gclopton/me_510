@@ -1,0 +1,8 @@
+## Part IV
+
+## Basic Methods of Computational Gasdynamics
+
+Most of the simple methods described in Part III have almost no potential for practical applications, due mainly to stability problems. This fourth part of the book concerns methods at the next higher level of sophistication, here referred to as the first generation of numerical methods for computational gasdynamics. However sophisticated they may be in other ways, by definition, first-generation methods do not use flux averaging, slope averaging, or other forms of solution sensitivity, except possibly upwinding. As a result, first-generation methods experience a sharp trade-off between accuracy and stability: They can model shocks well but then experience low accuracy in smooth regions; or they can model smooth regions well but then experience poor stability near shocks in the form of spurious oscillations and overshoots. The next part of the book, Part V, describes solutionsensitive second- and third-generation numerical methods, which reduce this trade-off by doing one thing in smooth regions and another at shocks. First-generation methods prove useful in undemanding applications and, more importantly, are the basic building blocks of second- and third-generation methods.
+
+Chapter 17 describes numerical methods for scalar conservation laws. Chapter 18 extends those methods to the Euler equations using flux vector splitting and Riemann solvers. Chapter 19 concerns solid and far-field boundary treatments, a crucial topic avoided until now by using periodic boundaries as in Chapter 15 or infinite boundaries as in Chapter 16.
+

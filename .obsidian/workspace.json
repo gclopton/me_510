@@ -1,0 +1,665 @@
+{
+  "main": {
+    "id": "d288874602e58cf4",
+    "type": "split",
+    "children": [
+      {
+        "id": "372bb5d7e8ec3963",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0555dfb665fdb45e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/Users/gradyclopton/ObsidianVaults/me_510/Lectures/Lecture 6",
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "/bin/zsh",
+                    "name": "",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": true,
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {},
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": {
+                    "columns": 203,
+                    "data": "\u001b[38;5;244m\u256d\u2500\u001b[38;5;254;44m \u001b[38;5;255;1m~\u001b[38;5;254;22m/ObsidianVaults/\u001b[38;5;255;1mme_510\u001b[38;5;254;22m/Lectures/\u001b[38;5;255;1mLecture 6\u001b[38;5;254;22m \u001b[34;43m\ue0b0\u001b[30m on master !7 ?20 \u001b[33;49m\ue0b0\u001b[38;5;244m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[30m\ue0b2\u001b[32;40m \u2714 \u001b[34m\ue0b2\u001b[30;44m ba\u001b[0m\r\n\u001b[38;5;244m\u256d\u2500\u001b[38;5;254;44m \u001b[38;5;255;1m~\u001b[38;5;254;22m/ObsidianVaults/\u001b[38;5;255;1mme_510\u001b[38;5;254;22m/Lectures/\u001b[38;5;255;1mLecture 6\u001b[38;5;254;22m \u001b[34;43m\ue0b0\u001b[30m on master !7 ?20 \u001b[33;49m\ue0b0\u001b[38;5;244m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[30m\ue0b2\u001b[32;40m \u2714 \u001b[34m\ue0b2\u001b[30;44m base \ue73c \u001b[36m\ue0b2\u001b[30;46m !6/6 \uf4a0 \u001b[37m\ue0b2\u001b[30;47m at 10:44:30 \u001b[38;5;244;49m\u2500\r\n\u256d\u2500\u001b[38;5;254;44m \u001b[38;5;255;1m~\u001b[38;5;254;22m/ObsidianVaults/\u001b[38;5;255;1mme_510\u001b[38;5;254;22m/Lectures/\u001b[38;5;255;1mLecture 6\u001b[38;5;254;22m \u001b[34;43m\ue0b0\u001b[30m on master !7 ?20 \u001b[33;49m\ue0b0\u001b[38;5;244m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[30m\ue0b2\u001b[32;40m \u2714 \u001b[34m\ue0b2\u001b[30;44m base \ue73c \u001b[36m\ue0b2\u001b[30;46m !6/6 \uf4a0 \u001b[0m\r\n\u001b[38;5;244m\u256d\u2500\u001b[38;5;254;44m \u001b[38;5;255;1m~\u001b[38;5;254;22m/ObsidianVaults/\u001b[38;5;255;1mme_510\u001b[38;5;254;22m/Lectures/\u001b[38;5;255;1mLecture 6\u001b[38;5;254;22m \u001b[34;43m\ue0b0\u001b[30m on master !7 ?20 \u001b[33;49m\ue0b0\u001b[38;5;244m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[30m\ue0b2\u001b[32;40m \u2714 \u001b[34m\ue0b2\u001b[30;44m base \ue73c \u001b[36m\ue0b2\u001b[30;46m !6/6 \uf4a0 \u001b[37m\ue0b2\u001b[30;47m at 10:\u001b[0m\r\n\u001b[38;5;244m\u256d\u2500\u001b[38;5;254;44m \u001b[38;5;255;1m~\u001b[38;5;254;22m/ObsidianVaults/\u001b[38;5;255;1mme_510\u001b[38;5;254;22m/Lectures/\u001b[38;5;255;1mLecture 6\u001b[38;5;254;22m \u001b[34;43m\ue0b0\u001b[30m on master !7 ?20 \u001b[33;49m\ue0b0\u001b[38;5;244m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[30m\ue0b2\u001b[32;40m \u2714 \u001b[34m\ue0b2\u001b[30;44m base \ue73c \u001b[36m\ue0b2\u001b[30;46m !6/6 \uf4a0 \u001b[37m\ue0b2\u001b[30;47m at\u001b[0m\r\n\u001b[38;5;244m\u256d\u2500\u001b[38;5;254;44m \u001b[38;5;255;1m~\u001b[38;5;254;22m/ObsidianVaults/\u001b[38;5;255;1mme_510\u001b[38;5;254;22m/Lectures/\u001b[38;5;255;1mLecture 6\u001b[38;5;254;22m \u001b[34;43m\ue0b0\u001b[30m on master !7 ?20 \u001b[33;49m\ue0b0\u001b[38;5;244m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[30m\ue0b2\u001b[32;40m \u2714 \u001b[34m\ue0b2\u001b[30;44m base \ue73c \u001b[36m\ue0b2\u001b[30;46m !6/6 \uf4a0 \u001b[37m\ue0b2\u001b[30;47m at 10:44:30 \u001b[38;5;244;49m\u2500\u256e\r\n\u2570\u2500\u001b[0m \u001b[197C\u001b[38;5;244m\u2500\u256f\u001b[199D\u001b[0m",
+                    "rows": 76
+                  }
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "Terminal: gradyclopton@wirelessprv-10-192-137-92:~/ObsidianVaults/me_510/Lectures/Lecture 6"
+            }
+          },
+          {
+            "id": "662d3f01e5dc95df",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Anderson/2 Integral Forms of the Conservation Equations for Inviscid Flows",
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "/bin/zsh",
+                    "name": "",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": true,
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {},
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": null
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "Terminal: zsh"
+            }
+          },
+          {
+            "id": "fef280e02d12251e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Anderson/2 Integral Forms of the Conservation Equations for Inviscid Flows",
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "/bin/zsh",
+                    "name": "",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": true,
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {},
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": {
+                    "columns": 90,
+                    "data": "\u001b[38;5;76m\u276f\u001b[0m \u001b[32mopen\u001b[0m \u001b[4m.\r\n\u001b[38;5;76;24m\u276f\u001b[0m \u001b[32mopen\u001b[0m \u001b[4m.\r\n\r\n\u001b[38;5;244;24m\u256d\u2500\u001b[38;5;254;44m \u001b[38;5;255;1m~\u001b[38;5;254;22m/\u001b[38;5;250mO\u001b[38;5;254m/\u001b[38;5;255;1mme_510\u001b[38;5;254;22m/\u001b[38;5;250mB\u001b[38;5;254m/\u001b[38;5;250mA\u001b[38;5;254m/\u001b[38;5;255;1m2 Integral Forms of the Conservation Equations for Inviscid Flows\u001b[38;5;254;22m \u001b[34;43m\ue0b0\u001b[30m on master !8 ?20 \u001b[33;49m\ue0b0\r\n\u001b[38;5;244m\u2570\u2500\u001b[0m \u001b[84C\u001b[38;5;244m\u2500\u256f\u001b[86D\u001b[0m",
+                    "rows": 46
+                  }
+                }
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "Terminal: gradyclopton@Gradys-MacBook-Pro-M3-5:~/ObsidianVaults/me_510/Books/Anderson/2 Integral Forms of the Conservation Equations for Inviscid Flows"
+            }
+          },
+          {
+            "id": "9a6ae017be55f018",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Homework 5/Homework 5 Lecture Solutions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Homework 5 Lecture Solutions"
+            }
+          },
+          {
+            "id": "a28d7a5368af051f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Homework 5/Homework 5 Lecture Questions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Homework 5 Lecture Questions"
+            }
+          },
+          {
+            "id": "ce58e44fee458f5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Final Homework/Final Homework 1 Solutions 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Final Homework 1 Solutions 1"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a913121842d4096d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ae5a160dc7f2a7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a185e14b2d2f58c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "abfdb73c35d8ecec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7552be6d45a6d44c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 464.5
+  },
+  "right": {
+    "id": "af15c0bdb4e6442a",
+    "type": "split",
+    "children": [
+      {
+        "id": "183e2fc3f2e2fc5a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69fba0c2b5843f9f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lectures/me-510-lecture-1-typed-ea2770b0-bc02-4f17-a251-2edafdee0704.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for me-510-lecture-1-typed-ea2770b0-bc02-4f17-a251-2edafdee0704"
+            }
+          },
+          {
+            "id": "bab15a512d6438e7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Lectures/me-510-lecture-1-typed-ea2770b0-bc02-4f17-a251-2edafdee0704.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from me-510-lecture-1-typed-ea2770b0-bc02-4f17-a251-2edafdee0704"
+            }
+          },
+          {
+            "id": "7eacde5cfb666eff",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1c743ca6cf85dc72",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Books/Anderson/3 One-Dimensional Flow/Equation Index \u2014 Anderson, Chapter 3.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Equation Index \u2014 Anderson, Chapter 3"
+            }
+          },
+          {
+            "id": "26ae760f669e0063",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Smart Connections Files"
+            }
+          },
+          {
+            "id": "31fc3750429fd34a",
+            "type": "leaf",
+            "state": {
+              "type": "research-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          },
+          {
+            "id": "3453da4a6f6642f4",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "29a9379857ad7083",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "3962792447a42690",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "e8e00b5eb5d89006",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "b3e666e3c2c3cfbd",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "c440554bc7663735",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "e9b5b000f8014344",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "195e81c4d3bdd242",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "0d145196e243ee97",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "1c3dcd4a0f58d11a",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "c93e215303ed3b39",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "245ba907bf5c25d4",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "2b4c99f3a680e60b",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "c25f151bdee3036d",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "02d9ba62af97fccf",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "beea871d472a54e0",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "6fd5e2e1817c3fd1",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "39254d52acc4efb4",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "acd707db5372b65d",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "0127b38eb3ec3c74",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "6aa0460e8189819a",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "54801514761f1752",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "65d5e69063c401b4",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "a754b92291a92742",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "dead30cfdaf43b5d",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
+            }
+          },
+          {
+            "id": "1a28a519f2f71981",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Smart Connections Files"
+            }
+          },
+          {
+            "id": "0d43b0c06bdb8734",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Smart Connections Files"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 211.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "ketcher:Create new structure": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "terminal:Open terminal": false,
+      "cloze:Toggle all clozes": false,
+      "dbfolder:Create a new database table": false,
+      "modalforms:Edit forms": false,
+      "markdown-table-editor:Open Markdown Table Editor": false
+    }
+  },
+  "active": "0d43b0c06bdb8734",
+  "lastOpenFiles": [
+    "Homework/Final Homework/Final Homework 1 Solutions.md",
+    "Homework/Final Homework/Final Homework 1 Solutions 1.md",
+    "Homework/Final Homework/images/Untitled Page.png",
+    "Homework/Final Homework/images/Pasted image 20260513114921.png",
+    "Homework/Final Homework/images/Pasted image 20260513114852.png",
+    "Homework/Final Homework/images/Pasted image 20260513114835.png",
+    "Homework/Final Homework/images/problem3_wave_structure.png",
+    "Homework/Final Homework/images/problem3_characteristics.png",
+    "Homework/Final Homework/images/problem3_state_profiles.png",
+    "Homework/Final Homework/images",
+    "Homework/Final Homework/problem3_shock_tube.py",
+    "Homework/Final Homework/Final Homework Lecture Mapping.md",
+    "Homework/Final Homework/Final Homework.md",
+    "Homework/Homework 4/Homework 4.md",
+    "Homework/Homework 4/Homework 4 Lecture Mapping.md",
+    "Homework/Homework 4/Homework 4 Questions.md",
+    "Homework/Midterm/Midterm.md",
+    "Homework/Homework 3B/Homework 3B Solutions.md",
+    "Homework/Homework 3A/Homework 3A; Solutions.md",
+    "Homework/Homework 3B/hw-3b-statement-0a6de7e0-b023-4f1e-bcb6-2afe6a0dd0ee.md",
+    "Homework/Homework 3A/Homework 3A; Conservative laws, sound speed, circulation, Kelvin, and Crocco.md",
+    "Homework/Homework 2/Homework 2 Solutions.md",
+    "Homework/Homework 2/Homework 2; Quasi-1D Flow, Influence Coefficients, and Choking.md",
+    "Homework/Homework 1/Homework 1; Flow Descriptions, Transport, and Integral Conservation.md",
+    "Lectures/Lecture 17 Unsteady 1D Compressible Flow/Lecture 17 Unsteady 1D Compressible Flow.md",
+    "Lectures/Lecture 17 Unsteady 1D Compressible Flow/images/Pasted image 20260513095044.png",
+    "Lectures/Lecture 17 Unsteady 1D Compressible Flow/images/Pasted image 20260513094921.png",
+    "Lectures/Lecture 17 Unsteady 1D Compressible Flow/images/Pasted image 20260509025815.png",
+    "Homework/Homework 5/Homework 5.md",
+    "Homework/Final Homework",
+    "Homework/Homework 5/Homework 5 Lecture Solutions.md",
+    "Homework/Homework 5/Homework 5 Lecture Questions.md",
+    "Homework/Homework 5/images",
+    "Homework/Homework 5/Homework 5 Lecture Mapping.md",
+    "Lectures/Lecture 16: Steady 2D Supersonic Flow, Characteristics, and Expansion Fans/Lecture 16: Steady 2D Supersonic Flow, Characteristics, and Expansion Fans.md",
+    "Lectures/Lecture 17 Unsteady 1D Compressible Flow/images",
+    "Lectures/Lecture 15: Supersonic Flow Past a Cone, Conical Similarity, and the Taylor-Maccoll System/Lecture 15: Supersonic Flow Past a Cone, Conical Similarity, and the Taylor-Maccoll System.md",
+    "Lectures/Lecture 17 Unsteady 1D Compressible Flow",
+    "Lectures/Lecture 14: Global Potential Flow, Flow Past a Wavy Wall, and Wave Drag/Lecture 14: Global Potential Flow, Flow Past a Wavy Wall, and Wave Drag.md",
+    "Lectures/Lecture 13: Frozen Compressible Potential Equation, 1D and 2D Reductions, and Streamfunction Formulation (Duplicate)/Lecture 13: Frozen Compressible Potential Equation, 1D and 2D Reductions, and Streamfunction Formulation (Duplicate).md",
+    "Lectures/Lecture 12: Frozen Compressible Potential Equation, 1D and 2D Reductions, and Streamfunction Formulation/Lecture 12: Frozen Compressible Potential Equation, 1D and 2D Reductions, and Streamfunction Formulation.md",
+    "Homework/Homework 5",
+    "Homework/Homework 4/assets",
+    "Homework/Homework 4/images",
+    "Lectures/Lecture 16: Steady 2D Supersonic Flow, Characteristics, and Expansion Fans"
+  ]
+}

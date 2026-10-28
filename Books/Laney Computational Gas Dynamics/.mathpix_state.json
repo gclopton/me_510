@@ -1,0 +1,212 @@
+{
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/01.0_pp_i_iv_Frontmatter.pdf": {
+    "completed_at": "2026-03-08T04:57:32.831644",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/00 Front Matter",
+    "pdf_id": "77919ad3-d214-492a-ae17-63e100531a0b",
+    "submitted_at": "2026-03-08T04:57:27.959795",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/02.0_pp_v_xii_Contents.pdf": {
+    "completed_at": "2026-03-08T04:57:40.310014",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/00 Contents",
+    "pdf_id": "2e5c5d60-3294-4554-a682-455596c6e861",
+    "submitted_at": "2026-03-08T04:57:33.237671",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/03.0_pp_xiii_xiv_Preface.pdf": {
+    "completed_at": "2026-03-08T04:57:45.556873",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/00 Preface",
+    "pdf_id": "f20f6f14-7ea2-4666-bf4f-d7a044299e68",
+    "submitted_at": "2026-03-08T04:57:40.694709",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/04.0_pp_1_2_Introduction.pdf": {
+    "completed_at": "2026-03-08T04:57:50.623702",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/01 Introduction",
+    "pdf_id": "6b11b08c-a5d9-43d5-a7fc-2faad3eeb5e2",
+    "submitted_at": "2026-03-08T04:57:45.890325",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/05.0_pp_3_4_Gasdynamics_Review.pdf": {
+    "completed_at": "2026-03-08T04:57:58.164382",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/Part I Gasdynamics Review",
+    "pdf_id": "370fb5a2-c850-4fd5-9f2c-6faa233bd630",
+    "submitted_at": "2026-03-08T04:57:50.991825",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/05.1_pp_5_20_Governing_Equations_of_Gasdynamics.pdf": {
+    "completed_at": "2026-03-08T04:58:12.028102",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/02 Governing Equations of Gasdynamics",
+    "pdf_id": "a05a7658-b240-4ecd-a8f9-5330652a41af",
+    "submitted_at": "2026-03-08T04:57:58.794428",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/05.2_pp_21_47_Waves.pdf": {
+    "completed_at": "2026-03-08T04:58:24.091502",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/03 Waves",
+    "pdf_id": "e063ccf6-adb9-4385-9dcf-0e1371b22953",
+    "submitted_at": "2026-03-08T04:58:12.810631",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/05.3_pp_48_70_Scalar_Conservation_Laws.pdf": {
+    "completed_at": "2026-03-08T04:58:39.914892",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/04 Scalar Conservation Laws",
+    "pdf_id": "52a2bbbc-f7a2-4ca8-8092-e9e23fb0e16e",
+    "submitted_at": "2026-03-08T04:58:24.870240",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/05.4_pp_71_102_The_Riemann_Problem.pdf": {
+    "completed_at": "2026-03-08T04:58:54.659518",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/05 The Riemann Problem",
+    "pdf_id": "e9610ae9-f3aa-495b-bf69-171e23eb7697",
+    "submitted_at": "2026-03-08T04:58:40.714636",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/06.0_pp_103_104_Computational_Review.pdf": {
+    "completed_at": "2026-03-08T04:58:59.845863",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/Part II Computational Review",
+    "pdf_id": "7a486d21-43af-43bc-a638-4b7910a01dee",
+    "submitted_at": "2026-03-08T04:58:55.001163",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/06.1_pp_105_116_Numerical_Error.pdf": {
+    "completed_at": "2026-03-08T04:59:08.333966",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/06 Numerical Error",
+    "pdf_id": "16ad4cf4-4880-4e3d-b881-899341df455f",
+    "submitted_at": "2026-03-08T04:59:00.426327",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/06.2_pp_117_131_Orthogonal_Functions.pdf": {
+    "completed_at": "2026-03-08T04:59:24.260687",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/07 Orthogonal Functions",
+    "pdf_id": "7fe1537f-b022-4b03-81fd-5058eb3ef9c1",
+    "submitted_at": "2026-03-08T04:59:08.997963",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/06.3_pp_132_149_Interpolation.pdf": {
+    "completed_at": "2026-03-08T04:59:44.933645",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/08 Interpolation",
+    "pdf_id": "235860ad-031c-48cb-bb11-6a644cea1868",
+    "submitted_at": "2026-03-08T04:59:24.881455",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/06.4_pp_150_171_Piecewise-Polynomial_Reconstruction.pdf": {
+    "completed_at": "2026-03-08T05:00:12.283554",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/09 Piecewise-Polynomial Reconstruction",
+    "pdf_id": "641e227c-4423-46b1-9852-454e598f8229",
+    "submitted_at": "2026-03-08T04:59:45.652184",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/06.5_pp_172_184_Numerical_Calculus.pdf": {
+    "completed_at": "2026-03-08T05:00:39.169479",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/10 Numerical Calculus",
+    "pdf_id": "87ea7f61-4485-4f54-bead-337a4681fb44",
+    "submitted_at": "2026-03-08T05:00:12.821646",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/07.0_pp_185_186_Basic_Principles_of_Computational_Gasdynamics.pdf": {
+    "completed_at": "2026-03-08T05:00:48.656373",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/Part III Basic Principles of Computational Gasdynamics",
+    "pdf_id": "edc10e9c-194d-4f58-95ee-ff836b1fb01a",
+    "submitted_at": "2026-03-08T05:00:39.496882",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/07.1_pp_187_213_Conservation_and_Other_Basic_Principles.pdf": {
+    "completed_at": "2026-03-08T05:01:07.582646",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/11 Conservation and Other Basic Principles",
+    "pdf_id": "ac0971b3-6d45-4af1-ac2c-69786ae2abfb",
+    "submitted_at": "2026-03-08T05:00:49.462179",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/07.2_pp_214_221_The_CFL_Condition.pdf": {
+    "completed_at": "2026-03-08T05:01:17.065162",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/12 The CFL Condition",
+    "pdf_id": "009168a5-2408-4e37-8467-c4bb98f1ce2c",
+    "submitted_at": "2026-03-08T05:01:09.309101",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/07.3_pp_222_248_Upwind_and_Adaptive_Stencils.pdf": {
+    "completed_at": "2026-03-08T05:01:28.690704",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/13 Upwind and Adaptive Stencils",
+    "pdf_id": "15eb7949-f794-46c7-ad50-dc3548fb2d2f",
+    "submitted_at": "2026-03-08T05:01:17.999560",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/07.4_pp_249_254_Artificial_Viscosity.pdf": {
+    "completed_at": "2026-03-08T05:01:34.856465",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/14 Artificial Viscosity",
+    "pdf_id": "9c43c2d7-67ce-4d3a-8a76-767cc331cb2d",
+    "submitted_at": "2026-03-08T05:01:29.157442",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/07.5_pp_255_271_Linear_Stability.pdf": {
+    "completed_at": "2026-03-08T05:01:45.533291",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/15 Linear Stability",
+    "pdf_id": "37b6a34f-8444-4f45-a167-8e8dd55eb3c9",
+    "submitted_at": "2026-03-08T05:01:35.511742",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/07.6_pp_272_306_Nonlinear_Stability.pdf": {
+    "completed_at": "2026-03-08T05:01:57.747444",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/16 Nonlinear Stability",
+    "pdf_id": "6a9e7fc8-0e0a-4343-92b5-617471526265",
+    "submitted_at": "2026-03-08T05:01:46.524881",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/08.0_pp_307_308_Basic_Methods_of_Computational_Gasdynamics.pdf": {
+    "completed_at": "2026-03-08T05:02:00.671935",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/Part IV Basic Methods of Computational Gasdynamics",
+    "pdf_id": "ef6dc510-3749-45b8-824b-d4f21e17b130",
+    "submitted_at": "2026-03-08T05:01:58.062505",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/08.1_pp_309_350_Basic_Numerical_Methods_for_Scalar_Conservation_Laws.pdf": {
+    "completed_at": "2026-03-08T05:02:14.931923",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/17 Basic Numerical Methods for Scalar Conservation Laws",
+    "pdf_id": "b33df5d9-2790-4f42-9176-28df725600a6",
+    "submitted_at": "2026-03-08T05:02:01.662562",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/08.2_pp_351_429_Basic_Numerical_Methods_for_the_Euler_Equations.pdf": {
+    "completed_at": "2026-03-08T05:02:34.704403",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/18 Basic Numerical Methods for the Euler Equations",
+    "pdf_id": "bff23f87-e924-4d17-87aa-5a382a18ca9c",
+    "submitted_at": "2026-03-08T05:02:16.169563",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/08.3_pp_430_454_Boundary_Treatments.pdf": {
+    "completed_at": "2026-03-08T05:02:50.672480",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/19 Boundary Treatments",
+    "pdf_id": "4b56d546-9770-43c6-b283-d68b5651b61b",
+    "submitted_at": "2026-03-08T05:02:35.588716",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/09.0_pp_455_458_Advanced_Methods_of_Computational_Gasdynamics.pdf": {
+    "completed_at": "2026-03-08T05:02:56.366505",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/Part V Advanced Methods of Computational Gasdynamics",
+    "pdf_id": "8f2f9ba6-e202-4021-969e-b240cb94805e",
+    "submitted_at": "2026-03-08T05:02:51.150863",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/09.1_pp_459_503_Flux_Averaging_I_Flux-Limited_Methods.pdf": {
+    "completed_at": "2026-03-08T05:03:36.337905",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/20 Flux Averaging I - Flux-Limited Methods",
+    "pdf_id": "c39b4b83-9bf9-4321-8da5-77c521e536ff",
+    "submitted_at": "2026-03-08T05:02:57.408453",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/09.2_pp_504_540_Flux_Averaging_II_Flux-Corrected_Methods.pdf": {
+    "completed_at": "2026-03-08T05:04:16.951321",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/21 Flux Averaging II - Flux-Corrected Methods",
+    "pdf_id": "143fa8f9-6e03-486c-847e-f0f151bccccc",
+    "submitted_at": "2026-03-08T05:03:37.250458",
+    "zip_kind": "md.zip"
+  },
+  "/Users/gradyclopton/Downloads/Books on Advanced Gas Dyanmics/Laney Computational Gas Dynamics/09.3_pp_541_564_Flux_Averaging_III_Self-Adjusting_Hybrid_Methods.pdf": {
+    "completed_at": "2026-03-08T05:04:45.271742",
+    "out_dir": "/Users/gradyclopton/ObsidianVaults/me_510/Books/Laney Computational Gas Dynamics/22 Flux Averaging III - Self-Adjusting Hybrid Methods",
+    "pdf_id": "2dad26a2-54a8-4e7d-945f-75f85ece6a98",
+    "submitted_at": "2026-03-08T05:04:17.690470",
+    "zip_kind": "md.zip"
+  }
+}

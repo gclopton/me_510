@@ -1,0 +1,1719 @@
+# Equation Index — Anderson, Chapter 2
+
+ME 510
+
+## Master Reference
+
+### Building Blocks (1–20)
+
+
+
+| #   | Name                                           | Eq. #   |
+| --- | ---------------------------------------------- | ------- |
+| 1   | Area vector                                    | —       |
+| 2   | Normal velocity component                      | —       |
+| 3   | Rate of mass flow through an elemental surface | Eq. 2.1 |
+| 4   | Mechanical power projection                    | —       |
+| 5   | Body force density                             | —       |
+| 6   | Elemental pressure force vector                | —       |
+| 7   | Elemental pressure power                       | —       |
+| 8   | External work power                            | —       |
+| 9   | Power density associated with body foces       | —       |
+| 10  | Volumetric heat-power density                  | —       |
+| 11  | Kinetic energy per unit mass                   | —       |
+| 12  | Total specific energy                          | —       |
+| 13  | Specific enthalpy                              | —       |
+| 14  | Calorically perfect gas internal energy        | —       |
+| 15  | Ideal Gas Linkage Equation (Equation of State) | —       |
+| 16  | Momentum flux (elemental form)                 | —       |
+| 17  | Gross momentum thrust                          | —       |
+| 18  | Inlet momentum drag                            | —       |
+| 19  | Pressure thrust                                | —       |
+| 20  | Mach number                                    | —       |
+
+### Assumptions & Simplifications (21–40)
+
+|#|Name|
+|---|---|
+|21|Continuum Assumption|
+|22|Constant Mass|
+|23|Uniform Density|
+|24|No Shaft Work|
+|25|Only the Parallel Component Does Work|
+|26|Stationary Point of Application|
+|27|Lumped Model (Uniform Properties)|
+|28|Rigid-Body / Particle Idealization|
+|29|Permeable Surface|
+|30|Uniform Flow|
+|31|Inviscid Flow|
+|32|Viscous Flow|
+|33|Steady Flow|
+|34|Incompressible Fluid|
+|35|Normal Flow|
+|36|Negligible Gravitational Potential Energy|
+|37|Fixed Control Volume|
+|38|Dimensional Reduction|
+|39|Thermodynamic Equilibrium|
+|40|Adiabatic Assumption|
+
+### Integral Components (41–53)
+
+|#|Name|Eq. #|
+|---|---|---|
+|41|Momentum storage inside the control volume|Eq. 2.9|
+|42|Mass contained inside the control volume|—|
+|43|Momentum contained inside the control volume|—|
+|44|Net mass flow into a fixed control volume|—|
+|45|Rate of work on the fluid due to pressure forces|Eq. 2.14|
+|46|Momentum flux across the control surface|Eq. 2.8|
+|47|Rate of work on the fluid due to body forces|Eq. 2.15|
+|48|Total body force acting on the control volume|Eq. 2.5|
+|49|Energy contained inside the control volume|—|
+|50|Time rate of change of energy inside the CV|Eq. 2.18|
+|51|Net rate of energy flow across the control surface|Eq. 2.17|
+|52|Total surface force due to pressure|Eq. 2.6|
+|53|Volumetric heat addition rate|Eq. 2.13|
+
+### Full Conservation Equations (54–59)
+
+|#|Name|Eq. #|
+|---|---|---|
+|54|Control Volume Power Balance|Eq. 2.12|
+|55|Integral continuity equation|Eq. 2.2|
+|56|Generalized Integral Energy Equation|Eq. 2.20a|
+|57|Inviscid Integral Energy Equation|Eq. 2.20|
+|58|Integral momentum equation (inviscid)|Eq. 2.11|
+|59|Integral momentum equation (with viscous force)|Eq. 2.11a|
+
+### Derived / Composite Results (60–67)
+
+|#|Name|Eq. #|
+|---|---|---|
+|60|Newton's second law (constant mass)|Eq. 2.4|
+|61|Newton's second law (general form)|Eq. 2.3|
+|62|Rocket thrust equation|Eq. 2.45 ($\dot{m}_i=0$)|
+|63|Total force on the control volume|Eq. 2.7|
+|64|Total rate of change of energy of the fluid|Eq. 2.19|
+|65|Total time rate of change of momentum|Eq. 2.10|
+|66|Total work rate on the fluid|Eq. 2.16|
+|67|Uninstalled engine thrust equation|Eq. 2.45|
+
+# Building Blocks
+
+## 1. Area vector
+
+> [!question]
+> 
+> (a) Write the definition of the area vector.
+> (b) What does the unit normal contribute?
+> (c) Why is this notation useful in flux integrals?
+
+> [!equation] Area vector
+> 
+> $$ d\mathbf{S}=\mathbf{n} dS $$
+
+This defines the oriented surface element used throughout the integral balances. It combines the scalar area magnitude with the outward unit normal so both size and direction are carried in a single object.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\mathbf{n}$|—|—|**Unit Normal**|The outward unit vector normal to the surface element.|
+|$dS$|m²|m²|**Scalar Area**|The magnitude of the infinitesimal surface patch.|
+|$d\mathbf{S}$|m²|m²|**Area Vector**|The oriented surface element used in surface-force and flux integrals.|
+
+## 2. Normal velocity component
+
+> [!question]
+> 
+> (a) Write the expression for the normal component of velocity.
+> (b) What angle appears in this definition?
+> (c) Why is this quantity central in flux calculations?
+
+> [!equation] Normal velocity component
+> 
+> $$ V\cos\theta $$
+
+This is the component of velocity directed normal to a surface. The angle $\theta$ is the angle between the velocity vector $\mathbf{V}$ and the outward surface normal $\mathbf{n}$. It is the only part of the velocity that carries fluid _across_ the surface—the tangential component moves fluid _along_ the surface without crossing it. In every flux integral in fluid mechanics (mass, momentum, and energy), only the normal component of the velocity is responsible for transport across the surface.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$V$|m/s|m·s⁻¹|**Flow Speed**|The magnitude of the local velocity vector.|
+|$\theta$|rad (or °)|—|**Incidence Angle**|The angle between the velocity vector and the outward surface normal.|
+|$V\cos\theta$|m/s|m·s⁻¹|**Normal Velocity Component**|The scalar component of the flow speed directed through the surface.|
+
+
+> [!NOTE]
+> The full velocity vector decomposes into a normal part and a tangential part:
+> 
+> $$
+> \mathbf{V}=V \cos \theta \mathbf{n}+V \sin \theta \mathbf{t}
+> $$
+> 
+> where $\mathbf{n}$ is the outward unit normal and $\mathbf{t}$ is the unit tangent. This is often written compactly as:
+> 
+> $$
+> \mathbf{V}=V_n \mathbf{n}+\mathbf{V}_t
+> $$
+> 
+> where $V_n=V \cos \theta$ is the scalar normal component and $\mathbf{V}_t=V \sin \theta \mathbf{t}$ is the tangential component lying in the plane of the surface. Only $V_n$ produces flux through the surface; $\mathbf{V}_t$ slides along it without crossing.
+
+
+
+## 3. Rate of Mass flow through an elemental surface (Eq. 2.1)
+
+> [!question]
+> 
+> (a) Write the equivalent forms for rate of elemental mass flow through a surface and explain how they are related.
+> (b) What geometric information is built into the vector-flux form?
+> (c) How does the sign of this quantity distinguish inflow from outflow?
+> (d) Why does only the normal component of velocity contribute?
+
+> [!equation] Mass flow through an elemental surface (Eq. 2.1)
+> 
+> $$ \dot{m}=\rho(V\cos\theta) dS=\rho V_n dS=\rho \mathbf{V}\cdot d\mathbf{S} $$
+
+This expression gives the mass flow rate through a differential surface element. The first two forms show that only the velocity component normal to the surface contributes; the final vector-dot-product form packages the same geometry and sign convention compactly. The sign distinguishes flow direction because the outward area vector sets the positive direction: $\mathbf{V}\cdot d\mathbf{S}=V\,dS\cos\theta$, so the sign depends on the angle $\theta$ between the velocity vector and the outward normal. If $0 \le \theta < 90^\circ$, then $\cos\theta>0$ and $\mathbf{V}\cdot d\mathbf{S}>0$, meaning fluid is leaving the control volume (outflow). If $\theta=90^\circ$, then $\mathbf{V}\cdot d\mathbf{S}=0$, so the flow is tangent to the surface and no mass crosses it. If $90^\circ<\theta\le 180^\circ$, then $\cos\theta<0$ and $\mathbf{V}\cdot d\mathbf{S}<0$, meaning fluid is entering the control volume (inflow). Only the normal component matters because the tangential component moves fluid _along_ the surface without crossing it — and mass can only be transported through a surface by fluid that actually penetrates it (see Entry 2).
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\dot{m}$|kg/s|kg·s⁻¹|**Elemental Mass Flow**|The mass per unit time crossing the differential surface element.|
+|$V_n = V\cos\theta$|m/s|m·s⁻¹|**Normal Velocity Component**|The component of velocity normal to the surface; positive for outflow, negative for inflow.|
+|$\rho \mathbf{V}\cdot d\mathbf{S}$|kg/s|kg·s⁻¹|**Compact Flux Form**|The dot-product form with geometry and sign convention built in.|
+
+## 4. Mechanical power projection
+
+> [!question]
+> 
+> (a) Write the expression for the rate of work done by a force acting on a moving body or fluid element.
+> (b) Why does the dot product appear in this expression?
+> (c) Under what conditions is the power zero even when a force is present?
+> (d) How is this expression used to build the pressure-work and body-force-work terms in the energy equation?
+
+> [!equation] Mechanical power projection
+> 
+> $$ \dot{W}=\mathbf{F}\cdot\mathbf{V} $$
+
+This expression gives the rate at which a force transfers mechanical energy when applied at a point moving with velocity $\mathbf{V}$. The overdot on $\dot{W}$ is Newton's notation for a time derivative: $\dot{W} = dW/dt$, meaning rate of work, i.e., power. The dot product shows that only the component of force aligned with the motion contributes to power: when $\mathbf{F} \perp \mathbf{V}$, the power is zero even if the force is large (e.g., centripetal force in circular motion). This formula is the building block for every work term in the energy equation. For pressure forces, substituting $\mathbf{F} = -p\, d\mathbf{S}$ gives the pressure-work element $-p(\mathbf{V}\cdot d\mathbf{S})$ (Entry 7). For body forces, the force on a mass $m$ is $\mathbf{F} = m\mathbf{f}$, where $\mathbf{f}$ is the body force per unit mass — an imposed force field like gravity ($\mathbf{f} = \mathbf{g}$) that has units of acceleration (see Entry 5). Dividing the power $\mathbf{F}\cdot\mathbf{V} = m\mathbf{f}\cdot\mathbf{V}$ by the mass gives the specific body-force power $\mathbf{f}\cdot\mathbf{V}$ (Entry 9).
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\mathbf{F}$|N|kg·m·s⁻²|**Force Vector**|The applied force doing work on the particle, body, or fluid element.|
+|$\mathbf{V}$|m/s|m·s⁻¹|**Velocity Vector**|The velocity of the point where the force acts.|
+|$\dot{W}=\mathbf{F}\cdot\mathbf{V}$|W (J/s)|kg·m²·s⁻³|**Mechanical Power**|The scalar power delivered by the force; zero when $\mathbf{F} \perp \mathbf{V}$.|
+
+## 5. Body force density
+
+> [!question]
+> 
+> (a) Write the expression for body force density.
+> (b) What two quantities are multiplied to form it?
+> (c) Why is this a force per unit volume?
+
+> [!equation] Body force density
+> 
+> $$ \rho \mathbf{f} $$
+
+This is the local body force acting on a unit volume of fluid. The body force per unit mass $\mathbf{f}$ (an acceleration, like $\mathbf{g}$) must be multiplied by the density $\rho$ to convert it into a force per unit volume, which is the form needed for volume integrals in the conservation equations. The result is a force per unit volume because $\rho$ (mass/volume) times $\mathbf{f}$ (force/mass) gives force/volume. Note that "force per unit mass" has units of acceleration: $\text{N/kg} = \text{kg·m/s}^2/\text{kg} = \text{m/s}^2$, which is why $\mathbf{f}$ appears in the table with units of m/s².
+
+| **Expression**    | **Units**                                                | **Base Units** | **Name**                     | **Description**                                          |
+| ----------------- | -------------------------------------------------------- | -------------- | ---------------------------- | -------------------------------------------------------- |
+| $\rho$            | kg/m³                                                    | kg·m⁻³         | **Density**                  | The mass per unit volume of fluid.                       |
+| $\mathbf{f}$      | $\text{N/kg} = \text{kg·m/s}^2/\text{kg} = \text{m/s}^2$ | m·s⁻²          | **Body Force per Unit Mass** | The body-force acceleration field, such as gravity.      |
+| $\rho \mathbf{f}$ | N/m³                                                     | kg·m⁻²·s⁻²     | **Body Force Density**       | The net body force exerted on each unit volume of fluid. |
+
+## 6. Elemental pressure-force vector
+
+> [!question]
+> 
+> (a) Write the elemental pressure-force vector acting on the fluid.
+> (b) Why is there a negative sign?
+> (c) What role does the area vector play?
+
+> [!equation] Elemental pressure force
+> 
+> $$ -p d\mathbf{S} $$
+
+This is the elemental surface force exerted by pressure on the fluid. Since pressure $p$ is a scalar (just a number with no direction), the only source of direction in this expression is the area vector $d\mathbf{S} = \mathbf{n}\,dS$. Dimensionally, pressure times area gives force ($p \cdot dS = \frac{F}{A} \cdot A = F$), so $p\,d\mathbf{S}$ is a force vector whose direction is set entirely by $d\mathbf{S}$. By convention, $d\mathbf{S}$ points _outward_ from the control volume — but pressure is compressive, meaning it physically pushes _inward_ on the fluid. Without the minus sign, $p\,d\mathbf{S}$ would be a force pointing outward, which is the wrong direction. The negative sign flips this vector inward, aligning the mathematics with the physics. In short, the area vector plays a dual role: it sets the *direction* of the force (since $p$ is a scalar and contributes none) and it sets the *magnitude* through the patch size $dS$ — a larger patch means more area for pressure to act on, and therefore more force.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$p$|Pa (N/m²)|kg·m⁻¹·s⁻²|**Pressure**|The local thermodynamic pressure at the surface element.|
+|$d\mathbf{S}$|m²|m²|**Area Vector**|The oriented surface element pointing outward from the control volume.|
+|$-p d\mathbf{S}$|N|kg·m·s⁻²|**Elemental Pressure Force**|The inward pressure force acting on the fluid over that surface patch.|
+
+## 7. Elemental pressure power
+
+> [!question]
+> 
+> (a) Write the elemental pressure-power term.
+> (b) How is this derived from the mechanical power projection?
+> (c) How is this expression tell us whether the fluid is flowing into the control volume, out of the control volume, or neither?
+
+> [!equation] Elemental pressure-power
+> 
+> $$ -p (\mathbf{V}\cdot d\mathbf{S}) $$
+
+This is the elemental rate of work done by pressure forces as fluid crosses a surface element. It follows directly from the power formula $\dot{W} = \mathbf{F} \cdot \mathbf{V}$: the elemental pressure force is $-p\,d\mathbf{S}$ (Entry 6), and dotting it with the velocity gives $-p (\mathbf{V} \cdot d\mathbf{S})$. The factor $\mathbf{V} \cdot d\mathbf{S} = V\cos\theta\,dS$, where $\theta$ is the angle between the velocity $\mathbf{V}$ and the outward normal $\mathbf{n}$. Only the component of velocity _normal_ to the surface carries fluid through the patch — the tangential component moves fluid along the surface without pushing anything through it. The sign of this dot product depends entirely on the angle $\theta$: when $\theta < 90°$ the flow is leaving the control volume ($\cos\theta > 0$, outflow), when $\theta > 90°$ the flow is entering ($\cos\theta < 0$, inflow), and when $\theta = 90°$ the flow is tangent to the surface and no fluid crosses the patch at all. With the negative sign out front, the full expression $-p(\mathbf{V} \cdot d\mathbf{S})$ is positive when fluid flows _into_ the control volume (inflow makes $\mathbf{V} \cdot d\mathbf{S} < 0$, and the minus sign flips it positive), meaning the surroundings are doing work on the system by pushing fluid in. It is negative when fluid flows out, meaning the system expends energy pushing fluid out against the external pressure.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\mathbf{V}\cdot d\mathbf{S}$|m³/s|m³·s⁻¹|**Elemental Volumetric Flow Rate**|The signed volume per unit time passing through the surface element.|
+|$p$|Pa (N/m²)|kg·m⁻¹·s⁻²|**Pressure**|The local thermodynamic pressure driving the work transfer.|
+|$-p (\mathbf{V}\cdot d\mathbf{S})$|W (J/s)|kg·m²·s⁻³|**Elemental Pressure Power**|The rate at which pressure does work on the fluid through that patch.|
+
+## 8. External work power
+
+
+> [!question]
+> 
+> (a) Write the combined external-work-power term.
+> (b) What two contributions are included in it?
+> (c) How are external work power and pressure work treated in the energy equation and why are they treated this way?
+
+> [!equation] External work power
+> 
+> $$ \dot{W}_{\text{shaft}}+\dot{W}_{\text{viscous}} $$
+
+This term groups the non-pressure mechanical power inputs to the control volume. It includes ==shaft work== (power transferred by rotating or translating machinery that physically crosses the control surface) and ==viscous work== (power transferred by viscous shear stresses acting on the boundary). These are separated from pressure work because pressure work occurs automatically at every permeable surface element where fluid crosses the boundary, while shaft and viscous work require the analyst to identify specific machinery or viscous boundaries. In the energy equation, pressure work gets its own surface integral, while these two are treated as separate, explicitly identified contributions.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\dot{W}_{\text{shaft}}$|W (J/s)|kg·m²·s⁻³|**Shaft Power**|Mechanical power transferred by rotating or translating machinery.|
+|$\dot{W}_{\text{viscous}}$|W (J/s)|kg·m²·s⁻³|**Viscous Work Power**|Mechanical power transferred by viscous stresses at the boundary.|
+|$\dot{W}_{\text{shaft}}+\dot{W}_{\text{viscous}}$|W (J/s)|kg·m²·s⁻³|**External Work Power**|The total non-pressure mechanical power added to the control volume.|
+
+## 9. Power density associated with body foces
+
+> [!question]
+> 
+> (a) Write the local power-density term associated with body forces.
+> (b) What does the dot product indicate?
+> (c) Why are we multiplying the specific power by density?
+
+> [!equation] Power density associated with body forces
+> 
+> $$ \rho (\mathbf{f}\cdot\mathbf{V}) $$
+
+This is the local rate of mechanical energy transfer per unit volume due to body forces acting on moving fluid. The dot product $\mathbf{f}\cdot\mathbf{V}$ gives ==the specific power== (power per unit mass (only the component of the body force aligned with the velocity does work)), and multiplying by $\rho$ converts it from power-per-mass to power-per-volume — the form needed inside a volume integral like $\iiint \rho(\mathbf{f}\cdot\mathbf{V}) d\mathscr{V}$.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho$|kg/m³|kg·m⁻³|**Density**|The local mass per unit volume.|
+|$\mathbf{f}\cdot\mathbf{V}$|m²/s³|m²·s⁻³|**Specific Power**|The rate of body-force work per unit mass.|
+|$\rho (\mathbf{f}\cdot\mathbf{V})$|W/m³|kg·m⁻¹·s⁻³|**Power Density**|The body-force power added locally per unit volume of fluid.|
+
+## 10. Volumetric heat-power density
+
+> [!question]
+> 
+> (a) Write the local volumetric heat-power-density term.
+> (b) What two quantities are multiplied to form it?
+> (c) Why is this a power per unit volume rather than per unit mass?
+
+> [!equation] Volumetric heat-power density
+> 
+> $$ \rho \dot{q} $$
+
+This is the local rate of thermal energy addition per unit volume. The specific heating rate $\dot{q}$ gives power per unit mass, but the energy equation requires a volume integral $\iiint \rho\dot{q} d\mathscr{V}$, so $\dot{q}$ must be converted to a per-volume basis by multiplying by $\rho$. The same logic applies here as in Entry 5 (body force density) and Entry 9 (power density): $\rho$ (mass/volume) × $\dot{q}$ (power/mass) = power/volume.
+
+| **Expression** | **Units**    | **Base Units** | **Name**                          | **Description**                                           |
+| -------------- | ------------ | -------------- | --------------------------------- | --------------------------------------------------------- |
+| $\dot{q}$      | W/kg (m²/s³) | m²·s⁻³         | **Specific Heat Addition**        | The heat added per unit mass per unit time.               |
+| $\rho$         | kg/m³        | kg·m⁻³         | **Density**                       | The local mass per unit volume.                           |
+| $\rho \dot{q}$ | W/m³         | kg·m⁻¹·s⁻³     | **Volumetric Heat-Power Density** | The thermal power added locally per unit volume of fluid. |
+
+## 11. Kinetic energy per unit mass
+
+> [!question]
+> 
+> (a) Write the expression for kinetic energy per unit mass associated with the bulk motion of a fluid.
+> (b) Why is this a scalar even though velocity is a vector?
+> (c) If we want to capture the total specific energy, what other term do we need to add to this and why?
+
+> [!equation] Kinetic energy per unit mass
+> 
+> $$ \frac{V^2}{2} $$
+
+This is the macroscopic mechanical energy associated with the bulk motion of a unit mass of fluid. It is a scalar because it depends on the speed $V = |\mathbf{V}|$ (the magnitude of the velocity vector), not on the direction — squaring the velocity eliminates directional information. In the total specific energy (Entry 12), the internal energy $e$ is added to this quantity: $e + V^2/2$. The internal energy captures microscopic thermal energy (molecular motion), while $V^2/2$ captures macroscopic bulk motion.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$V$|m/s|m·s⁻¹|**Flow Speed**|The magnitude of the local velocity vector.|
+|$\frac{V^2}{2}$|m²/s²|m²·s⁻²|**Specific Kinetic Energy**|The kinetic energy carried by a unit mass of moving fluid.|
+
+## 12. Total specific energy
+
+> [!question]
+> 
+> (a) Write the expression for total specific energy in the chapter’s inviscid energy balances.
+> (b) Why is this called a “specific” energy?
+
+> [!equation] Total specific energy
+> 
+> $$ e+\frac{V^2}{2} $$
+
+This is the total energy carried by a unit mass of fluid. The word "specific" means per unit mass. It combines two contributions: the microscopic thermal energy $e$ (molecular motion, vibration, etc.) and the macroscopic kinetic energy $\frac{V^2}{2}$ (bulk fluid motion). Gravitational potential energy does not appear here because Anderson's formulation accounts for gravity through the body-force work term in the energy equation rather than storing it as $gz$ in the energy variable.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$e$|m²/s² (J/kg)|m²·s⁻²|**Internal Energy**|The microscopic thermal energy stored in the fluid per unit mass.|
+|$\frac{V^2}{2}$|m²/s²|m²·s⁻²|**Specific Kinetic Energy**|The macroscopic motion energy per unit mass.|
+|$e+\frac{V^2}{2}$|m²/s² (J/kg)|m²·s⁻²|**Total Specific Energy**|The total energy per unit mass, combining thermal and kinetic contributions.|
+
+## 13. Specific enthalpy
+
+> [!question]
+> 
+> (a) Write the definition of specific enthalpy.
+> (b) What is flow work?
+> (b) Why does enthalpy — rather than internal energy — naturally appear in energy analyses of open systems (control volumes)?
+> (c) Show how the pressure-work surface integral and the internal-energy flux combine to produce an enthalpy flux at a 1-D station.
+> (d) For a calorically perfect gas, write $h$ in terms of $c_p$ and $T$. How is this related to $e = c_v T$?
+
+> [!equation] Specific enthalpy
+> 
+> $$ h = e + \frac{p}{\rho} $$
+
+This is the natural energy variable for open systems. It combines the internal (thermal) energy $e$ with the ==flow work== $p/\rho$ — the work per unit mass that the surrounding fluid must do to push a fluid parcel across a control surface against the local pressure. Whenever fluid enters or leaves a control volume, it carries both its internal energy and the pressure-volume work needed to make room for it; enthalpy packages these two contributions together. This is why $h$ (not $e$) appears in the Steady-Flow Energy Equation. 
+
+
+To see how enthalpy emerges, begin with the two surface terms in the energy equation: the pressurework contribution and the internal-energy flux contribution,
+
+$$
+\iint p \mathbf{V} \cdot d \mathbf{S}+\iint \rho e \mathbf{V} \cdot d \mathbf{S} .
+$$
+
+
+Because both terms are integrated over the same surface and multiply the same flux factor $\mathbf{V} \cdot d \mathbf{S}$, they can be combined into a single integral,
+
+$$
+=\iint(p+\rho e) \mathbf{V} \cdot d \mathbf{S}
+$$
+
+
+The next step is purely algebraic: rewrite the pressure term so that it also contains a factor of $\rho$, which will allow the energy-like quantities to be grouped on a per-unit-mass basis,
+
+$$
+=\iint\left(\frac{\rho p}{\rho}+\rho e\right) \mathbf{V} \cdot d \mathbf{S}
+$$
+
+
+Now factor out $\rho$ from the integrand,
+
+$$
+=\iint \rho\left(\frac{p}{\rho}+e\right) \mathbf{V} \cdot d \mathbf{S}
+$$
+
+
+At this point the combination inside the parentheses is exactly the specific enthalpy,
+
+$$
+h \equiv e+\frac{p}{\rho}
+$$
+
+
+Substituting this into the integral gives
+
+$$
+=\iint \rho h \mathbf{V} \cdot d \mathbf{S}
+$$
+
+
+So the sum of the pressure-work flux and the internal-energy flux becomes a single enthalpy flux term,
+
+$$
+\iint p \mathbf{V} \cdot d \mathbf{S}+\iint \rho e \mathbf{V} \cdot d \mathbf{S}=\iint \rho h \mathbf{V} \cdot d \mathbf{S}
+$$
+
+
+
+
+For a calorically perfect gas, this becomes
+
+$$
+h=e+\frac{p}{\rho} .
+$$
+
+
+Using the relations $e=c_v T$ and $p=\rho R T$ (see entries 14 and 15),
+
+$$
+h=c_v T+\frac{\rho R T}{\rho} .
+$$
+
+
+Canceling $\rho$ in the second term gives
+
+$$
+=c_v T+R T .
+$$
+
+
+Factor out $T$,
+
+$$
+=\left(c_v+R\right) T .
+$$
+
+
+Then use the identity $c_p=c_v+R$,
+
+$$
+=c_p T .
+$$
+
+
+Thus, for a calorically perfect gas,
+
+$$
+h=c_p T .
+$$
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$e$|J/kg|m²·s⁻²|**Internal Energy**|The microscopic thermal energy per unit mass.|
+|$p/\rho$|J/kg|m²·s⁻²|**Flow Work**|The work per unit mass needed to push a fluid parcel across a boundary against the local pressure.|
+|$h = e + p/\rho$|J/kg|m²·s⁻²|**Specific Enthalpy**|The total energy per unit mass relevant for open-system analysis; packages internal energy and flow work together.|
+
+## 14. Calorically perfect gas internal energy
+
+> [!question]
+> 
+> (a) Write the expression for the internal energy per unit mass of a calorically perfect gas.
+> (b) What is the central assumption this model makes about the gas, and what does it imply about the relationship between internal energy and temperature?
+> (c) Real gases have energy modes (translation, rotation, vibration) that can activate at high temperatures. How does this model treat those modes, and when might that treatment break down?
+> (d) What assumptions do we need to make for this equation to be valid?
+> (f) What convention do we follow for the reference energy? What might happen in problems involving chemical reactions or multiple species?
+
+> [!equation] Calorically perfect gas internal energy
+> 
+> $$ e=c_v T $$
+
+This equation states that for a calorically perfect gas, internal energy is a linear function of temperature. The central assumption is that $c_v$ — the specific heat at constant volume — is a constant, independent of temperature. This means that every degree of temperature increase adds the same amount of internal energy, regardless of how hot the gas already is. The assumption works well for air below roughly 1000 K, where the active energy modes (translation and rotation) contribute fixed amounts to $c_v$. Above that threshold, vibrational modes progressively activate, $c_v$ increases with temperature, and the gas is no longer calorically perfect — $e$ must then be computed from $e = \int c_v(T) dT$ rather than $c_v T$.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$e$|J/kg|m²·s⁻²|**Internal Energy per Unit Mass**|The thermodynamic internal energy of the gas per unit mass.|
+|$c_v T$|J/kg|m²·s⁻²|**Calorically Perfect-Gas Closure**|For constant $c_v$, internal energy varies linearly with temperature.|
+
+### Assumptions and Simplifications
+
+1. **Calorically Perfect Gas ($c_v = \text{const}$).** The defining assumption. All molecular energy modes (translation, rotation, vibration) are assumed to contribute a fixed, temperature-independent amount to the heat capacity. This is an excellent approximation for air below roughly 1000 K. Above that threshold, vibrational modes progressively activate, causing $c_v$ to increase with temperature. At that point, the gas is _thermally perfect_ ($p = \rho RT$ still holds) but no longer calorically perfect, and $e$ must be computed from $e = \int c_v(T) dT$ rather than $c_v T$.
+2. **Reference Energy Set to Zero at $T = 0$.** The expression $e = c_v T$ implicitly sets the internal energy datum so that $e = 0$ when $T = 0$. This is a convention, not a physical requirement. In problems involving chemical reactions or multiple species, a different reference state may be needed, and the expression generalizes to $e = c_v (T - T_{\text{ref}}) + e_{\text{ref}}$.
+3. **Single-Species or Fixed-Composition Gas.** The value of $c_v$ depends on the molecular weight and degrees of freedom of the gas. If the composition changes (e.g., due to dissociation or combustion), $c_v$ changes as well, and a single constant value no longer applies.
+
+> [!NOTE]
+> The companion relation $h = c_p T$ follows from $h = e + p/\rho = c_v T + RT = (c_v + R)T = c_p T$. Both relations share the same assumptions; if one breaks down, so does the other.
+
+
+
+## 15. Ideal Gas Linkage Equation (Equation of State)
+
+> [!Question]
+> 
+> (a) Write the ideal gas equation of state in terms of density and the specific gas constant.
+> (b) What is the fundamental role this equation plays in connecting the governing equations of fluid dynamics? Which two sets of properties does it bridge?
+> (c) The specific gas constant R is defined in terms of two quantities. What are they, and why does R differ from one gas to another?
+> (d) Why must temperature be expressed in absolute units (Kelvin or Rankine) rather than Celsius or Fahrenheit for this equation to work?
+
+> [!equation] Ideal Gas Linkage Equation (Equation of State)
+> 
+> $$ p=\rho R T $$
+
+This equation of state links the mechanical properties ($p$, $\rho$) to the thermal property ($T$), providing the bridge that couples the momentum equation to the energy equation. Without it, the system of governing equations would have more unknowns than equations. The specific gas constant $R = \mathcal{R}/M$ depends on the molecular weight $M$ of the gas, which is why $R$ differs from one gas to another ($R_{\text{air}} \approx 287$ J/(kg·K), $R_{\text{He}} \approx 2077$ J/(kg·K)). Temperature must be in absolute units (Kelvin or Rankine) because the equation requires $T = 0$ to correspond to zero molecular kinetic energy — using Celsius or Fahrenheit would introduce an incorrect offset.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$p$|Pa|kg·m⁻¹·s⁻²|**Pressure**|The thermodynamic pressure of the gas.|
+|$\rho$|kg/m³|kg·m⁻³|**Density**|The mass per unit volume of the gas.|
+|$R$|J/(kg·K)|m²·s⁻²·K⁻¹|**Specific Gas Constant**|$R = \mathcal{R}/M$; depends on molecular weight, so it differs from one gas to another.|
+|$T$|K|K|**Absolute Temperature**|Must be in Kelvin or Rankine; measures the average translational kinetic energy of the molecules.|
+
+### Assumptions and Simplifications
+
+1. **Molecules Are Point Particles with No Intermolecular Forces.** The ideal gas model assumes that gas molecules occupy negligible volume and exert no attractive or repulsive forces on one another except during brief elastic collisions. This is an excellent approximation when the gas is at low density and high temperature relative to its critical point. It breaks down near condensation, at very high pressures, or at cryogenic temperatures—regimes where real-gas equations of state (e.g., van der Waals, Redlich-Kwong) are needed.
+2. **Local Thermodynamic Equilibrium.** The equation assumes that $p$, $\rho$, and $T$ are well-defined at each point, meaning the gas is in local thermodynamic equilibrium. This fails in extreme rarefied flows (high Knudsen number) or in strong non-equilibrium conditions such as the interior of a shock wave at the molecular scale.
+3. **Chemically Frozen Composition (Fixed $R$).** The specific gas constant $R = \mathcal{R}/M$ is treated as a constant, which requires the molecular weight $M$ of the gas to be fixed. For air below roughly 2500 K, this is accurate ($R_{\text{air}} \approx 287;\text{J/(kg·K)}$). At very high temperatures (e.g., hypersonic re-entry), dissociation and ionization change the effective molecular weight, and $R$ becomes a function of temperature and pressure. In such cases $p = \rho RT$ still holds instantaneously, but $R$ must be updated to reflect the local gas composition.
+4. **Temperature Must Be Absolute.** $T$ must be in Kelvin or Rankine. Using Celsius or Fahrenheit will produce incorrect results.
+
+> [!NOTE]
+> **Thermally Perfect vs. Calorically Perfect.** The ideal gas law $p = \rho RT$ makes the gas _thermally perfect_—it defines the $p$-$\rho$-$T$ relationship. A separate, independent assumption is that the gas is _calorically perfect_, meaning $c_p$ and $c_v$ (and hence $\gamma = c_p/c_v$) are constants independent of temperature. Both assumptions together give a _calorically perfect ideal gas_, the simplest model used extensively in introductory compressible flow. A gas can be thermally perfect without being calorically perfect—this distinction becomes important above roughly 1000 K for air.
+
+## 16. Momentum flux (elemental form)
+
+> [!question]
+> 
+> (a) Write the elemental convective momentum-flux term.
+> (b) Which factor gives the mass flow through the surface element?
+> (c) Why is the result a vector?
+
+> [!equation] Momentum flux (elemental form)
+> 
+> $$ (\rho \mathbf{V}\cdot d\mathbf{S}) \mathbf{V} $$
+
+This is the momentum per unit time carried through a surface element by the flowing fluid. The scalar mass-flow factor selects how much mass crosses the element, and multiplication by $\mathbf{V}$ attaches the momentum direction.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho \mathbf{V}\cdot d\mathbf{S}$|kg/s|kg·s⁻¹|**Elemental Mass Flow**|The signed mass flow rate through the surface element.|
+|$\mathbf{V}$|m/s|m·s⁻¹|**Velocity Vector**|The velocity (momentum per unit mass) of the fluid crossing the element.|
+|$(\rho \mathbf{V}\cdot d\mathbf{S}) \mathbf{V}$|N (kg·m/s²)|kg·m·s⁻²|**Elemental Momentum Flux**|The momentum transported through the surface element per unit time.|
+
+## 17. Gross momentum thrust
+
+> [!question]
+> 
+> (a) Write the expression for the gross momentum-thrust term in the engine thrust equation.
+> (b) What physical process does this term represent?
+> (c) Why is this called a momentum thrust?
+
+> [!equation] Gross momentum thrust
+> 
+> $$ \dot{m}_e V_e $$
+
+This is the exhaust-momentum contribution to thrust. It equals the rate at which momentum is carried out of the engine by the exhaust gas — mass per time ($\dot{m}_e$) times velocity ($V_e$) gives momentum per time, which has units of force. It is called a _momentum_ thrust (as opposed to pressure thrust) because it arises entirely from the change in momentum of the fluid, not from any pressure imbalance at the exit.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\dot{m}_e$|kg/s|kg·s⁻¹|**Exit Mass Flow Rate**|The rate at which exhaust mass leaves the engine.|
+|$V_e$|m/s|m·s⁻¹|**Exit Velocity**|The exhaust speed relative to the engine.|
+|$\dot{m}_e V_e$|N|kg·m·s⁻²|**Gross Momentum Thrust**|The thrust contribution from the outgoing exhaust momentum.|
+
+## 18. Inlet momentum drag
+
+> [!question]
+> 
+> (a) Write the inlet-momentum-drag term from the air-breathing engine thrust equation.
+> (b) Why is this considered a drag penalty?
+> (c) What inlet quantities appear in it?
+
+> [!equation] Inlet momentum drag
+> 
+> $$ \dot{m}_i V_\infty $$
+
+This is the momentum penalty associated with ingesting air that is already moving at the flight speed $V_\infty$. The incoming air carries momentum $\dot{m}_i V_\infty$ into the engine — but this momentum was not created by the engine; it was already present in the freestream. In the thrust equation, this term is subtracted from the gross exhaust thrust because only the _increase_ in momentum produced by the engine counts as thrust. The faster the aircraft flies, the larger $V_\infty$ becomes and the greater the penalty, which is why it is called "ram drag."
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\dot{m}_i$|kg/s|kg·s⁻¹|**Inlet Mass Flow Rate**|The rate at which ambient air enters the engine.|
+|$V_\infty$|m/s|m·s⁻¹|**Freestream Velocity**|The incoming air speed relative to the engine.|
+|$\dot{m}_i V_\infty$|N|kg·m·s⁻²|**Inlet Momentum Drag**|The momentum term that opposes the gross exhaust thrust.|
+
+## 19. Pressure thrust
+
+> [!question]
+> 
+> (a) Write the pressure-thrust term from the engine or rocket thrust equation.
+> (b) What pressure difference appears in this expression?
+> (c) When does this term vanish?
+
+> [!equation] Pressure thrust
+> 
+> $$ (p_e-p_\infty)A_e $$
+
+This is the thrust contribution caused by a mismatch between exit pressure and ambient pressure. When $p_e > p_\infty$, the higher-pressure exhaust gas pushes outward against the exit plane, producing an additional forward force beyond the momentum thrust. This term vanishes when the nozzle is _perfectly expanded_ ($p_e = p_\infty$), meaning the exhaust gas has expanded exactly to ambient pressure by the time it reaches the exit — the ideal design condition for maximum efficiency.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$p_e-p_\infty$|Pa|kg·m⁻¹·s⁻²|**Pressure Difference**|The exit pressure relative to ambient pressure.|
+|$A_e$|m²|m²|**Exit Area**|The nozzle exit area over which the pressure difference acts.|
+|$(p_e-p_\infty)A_e$|N|kg·m·s⁻²|**Pressure Thrust**|The thrust contribution arising from exit-pressure imbalance.|
+
+## 20. Mach number
+
+> [!question]
+> 
+> (a) Write the definition of the Mach number. What two speeds are being compared?
+> (b) What is the physical significance of $M = 1$? What are the flow regimes for $M < 1$, $M \approx 1$, and $M > 1$?
+> (c) Why is $M < 0.3$ commonly used as the threshold for treating a gas flow as incompressible?
+> (d) How does the Mach number determine whether density changes in the flow are significant?
+
+> [!equation] Mach number
+> 
+> $$ M = \frac{V}{a} $$
+
+The Mach number is the ratio of the local flow speed $V$ to the local speed of sound $a$. It is the single most important dimensionless parameter in compressible flow because it determines whether pressure disturbances can propagate upstream (subsonic, $M < 1$) or are swept downstream (supersonic, $M > 1$). The threshold $M < 0.3$ is commonly used as the criterion for treating a gas flow as incompressible: below this speed, density changes due to compressibility are less than about 5%, which is negligible for most engineering purposes. Above $M \approx 0.3$, compressibility effects become progressively more important — density, temperature, and pressure vary significantly along the flow, shock waves can form, and the incompressible equations are no longer valid. For a calorically perfect gas, the speed of sound is $a = \sqrt{\gamma R T}$, so the Mach number depends on both the flow speed and the local temperature.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$V$|m/s|m·s⁻¹|**Flow Speed**|The magnitude of the local velocity vector.|
+|$a$|m/s|m·s⁻¹|**Speed of Sound**|The speed at which small pressure disturbances propagate through the fluid; $a = \sqrt{\gamma R T}$ for a calorically perfect gas.|
+|$M = V/a$|—|—|**Mach Number**|The ratio of flow speed to sound speed; determines the compressibility regime.|
+
+# Assumptions & Simplifications
+
+## 21. Continuum Assumption
+
+> [!question]
+> 
+> (a) What does the continuum assumption assert about the fluid, and why is it necessary before writing any differential or integral equation?
+> (b) What dimensionless number quantifies whether the assumption is valid, and what is the critical threshold?
+> (c) Give two examples of flows where the continuum assumption breaks down.
+
+> [!assumption] Continuum Assumption
+> 
+> The fluid is treated as a continuous medium rather than as a collection of discrete molecules. All field quantities ($\rho$, $p$, $\mathbf{V}$, $T$, etc.) are smooth, well-defined functions of position and time.
+
+**Definition.** The continuum assumption replaces the actual molecular structure of a gas or liquid with a smoothly varying field. At every point you can define density, pressure, velocity, and temperature as continuous functions, even though the real substance is made of discrete particles with gaps between them. This is the foundational assumption behind every partial differential equation and integral balance in fluid mechanics—without it, operations like $\partial / \partial x$ or $\iiint dV$ on fluid properties would not be meaningful.
+
+**When it is acceptable.** The assumption holds whenever the characteristic length scale of the problem $L$ is much larger than the molecular mean free path $\lambda$. This is quantified by the Knudsen number $\text{Kn} = \lambda / L$. When $\text{Kn} \ll 1$ (typically $\text{Kn} < 0.01$), there are enough molecules in every "small" volume element that averages like density and velocity are statistically stable and the continuum picture is valid. For air at sea level, $\lambda \approx 68 \text{nm}$, so any engineering scale easily satisfies the requirement. The assumption breaks down in rarefied gas dynamics—flows at very high altitude, inside vacuum chambers, or in microelectromechanical systems (MEMS) where the channel width approaches the mean free path.
+
+**How to recognize when you can apply it.** Every equation in this index requires the continuum assumption—it is a prerequisite, not a simplification that drops a term. Before using any differential or integral equation from fluid mechanics, check the Knudsen number: if the problem involves standard atmospheric conditions, liquid flow, or any engineering-scale device, the assumption is safe and you can proceed. The clues that should make you _pause_ are problem statements mentioning very high altitude, near-vacuum conditions, micro/nano-scale channels, or molecular-level phenomena—these signal that $\text{Kn}$ may be large enough to invalidate the entire continuum formulation.
+
+## 22. Constant Mass
+
+> [!question]
+> 
+> (a) What does the constant-mass assumption allow you to do with $m$ in a time derivative like $\frac{d}{dt}(m\mathbf{V})$?
+> (b) What clues in a problem statement tell you this assumption is valid?
+> (c) Give an example of a system where this assumption fails, and explain why.
+
+> [!assumption] Constant Mass
+> 
+> The total mass of the system does not change over the time interval of interest.
+
+**When it is acceptable.** This assumption applies to any system that neither gains nor loses mass—a closed system in thermodynamics, a solid body in dynamics, or a control mass (system) in fluid mechanics. It is the default in classical particle and rigid-body mechanics. In fluid mechanics it is valid when you are tracking a fixed material volume (a Lagrangian system), since mass conservation for a material volume is an identity. It is _not_ valid for an open control volume with flow crossing its boundaries, which is why the integral continuity equation has a flux term $\iint_S \rho \mathbf{V} \cdot d\mathbf{S}$. In reacting flows or relativistic problems, the assumption may also require modification.
+
+**How to recognize when you can apply it.** Look for $m$ appearing inside a time derivative, such as $\frac{d}{dt}(m\mathbf{V})$. If the problem statement describes a closed system, a solid body, or a fixed collection of material with no mass entering or leaving, you can pull $m$ out of the derivative and write $m\frac{d\mathbf{V}}{dt}$ instead. The clues are phrases like "closed system," "fixed mass," "solid body," or any setup where nothing is being injected or expelled. If the problem involves a rocket, a filling tank, a leaking container, or any open control volume, $m$ is changing and must stay inside the derivative.
+
+## 23. Uniform Density
+
+> [!question]
+> 
+> (a) How does uniform density differ from the incompressible assumption?
+> (b) If you see $\rho$ inside a spatial integral like $\iint_S \rho \mathbf{V} \cdot d\mathbf{S}$, what conditions in the problem statement would let you pull $\rho$ out?
+> (c) What types of flows violate the uniform-density assumption?
+
+> [!definition] Uniform Density
+> 
+> The density $\rho$ is the same at every point in the region of interest at any given instant.
+
+**When it is acceptable.** Uniform density (spatially constant $\rho$) is acceptable when the flow speeds are low enough that compressibility effects are negligible (roughly $M < 0.3$) and there are no significant temperature or composition gradients that would cause density to vary from point to point. It is the standard working assumption for most liquid flows and for low-speed gas flows. Note that "uniform density" is stronger than "incompressible": incompressibility ($D\rho/Dt = 0$) says density doesn't change following a fluid particle, while uniform density says it is the same everywhere. For a single-fluid, isothermal, low-Mach flow the two are effectively equivalent.
+
+**How to recognize when you can apply it.** Look for $\rho$ sitting inside a spatial integral or under a spatial derivative—for example, $\iint_S \rho \mathbf{V} \cdot d\mathbf{S}$ or $\nabla \cdot (\rho \mathbf{V})$. If the problem tells you the fluid is a liquid, or states that the flow is low-speed with no significant temperature or composition gradients, you can pull $\rho$ out as a constant: $\rho \iint_S \mathbf{V} \cdot d\mathbf{S}$ or $\rho(\nabla \cdot \mathbf{V})$. Key clues in the problem statement include "water," "liquid," "constant density," "low-speed air," or any indication that the fluid is homogeneous and incompressible. If the problem involves high-speed gas flow, combustion, mixing of different fluids, or large temperature variations, $\rho$ varies spatially and must remain inside the integral or derivative.
+
+## 24. No Shaft Work
+
+> [!question]
+> 
+> (a) What is shaft work, and what physical devices produce it?
+> (b) Which term in the energy equation do you set to zero when applying this assumption?
+> (c) What clues in a problem statement tell you whether a $\dot{W}_{\text{shaft}}$ term should be kept or dropped?
+
+> [!assumption] No Shaft Work
+> 
+> There is no mechanical power crossing the control surface via a rotating shaft, piston, or other moving mechanical element: $\dot{W}_{\text{shaft}} = 0$.
+
+**Definition.** Shaft work is mechanical energy transferred into or out of a control volume by a device that physically crosses the control surface—a turbine rotor, a compressor impeller, a pump shaft, a piston, or a fan blade. Setting $\dot{W}_{\text{shaft}} = 0$ means no such device is present within or penetrating the boundary of the control volume.
+
+**When it is acceptable.** This assumption is valid for any control volume whose boundary does not enclose (or is not crossed by) a piece of rotating or translating machinery. Examples include flow over an airfoil, flow through a duct without a fan, or flow around a building. It is _not_ valid when the control volume contains a turbine, compressor, pump, or propeller—in those cases $\dot{W}_{\text{shaft}}$ is the primary mechanism of energy transfer and cannot be dropped.
+
+**How to recognize when you can apply it.** Look for a $\dot{W}_{\text{shaft}}$ term in the energy equation (see Entry 8, External Work Power). Before deciding whether to keep or drop it, ask: does the control volume contain or is it crossed by any piece of machinery—a turbine, compressor, pump, fan, or piston? If the problem describes flow over an airfoil, through a plain duct, or around a building with no mechanical device, you can set $\dot{W}_{\text{shaft}} = 0$ and delete that term. If the problem mentions a pump, turbine, compressor, or any work-producing/absorbing device inside the control volume, the term must be retained.
+
+## 25. Only the Parallel Component Does Work
+
+> [!question]
+> 
+> (a) Why is this principle an exact identity rather than an approximation?
+> (b) If you see a work-rate term $\mathbf{F} \cdot \mathbf{V}$ in an energy equation, what geometric condition in the problem would let you set that term to zero?
+> (c) Give a fluid-mechanics example where a force is present but does zero work because of this principle.
+
+> [!assumption] Only the Parallel Component Does Work
+> 
+> When a force acts on a moving point, only the component of the force parallel to the velocity contributes to the rate of work (power). The perpendicular component changes the direction of motion but transfers no energy.
+
+**Definition.** This is the physical content of the dot product in $\dot{W} = \mathbf{F} \cdot \mathbf{V} = FV\cos\alpha$, where $\alpha$ is the angle between the force and the velocity. The power is maximized when force and velocity are aligned ($\alpha = 0$), zero when they are perpendicular ($\alpha = 90°$), and negative when they oppose each other ($\alpha > 90°$). This is not an "approximation" in the usual sense—it is an exact consequence of the definition of work—but recognizing it is critical for simplifying energy equations.
+
+**When it is acceptable.** Always. This is not a modeling assumption that can break down; it is built into the definition of mechanical work. It becomes a useful _simplification tool_ when the geometry of a problem guarantees that a particular force is always perpendicular to the motion. For example, in uniform circular motion the centripetal force is always perpendicular to the velocity, so it does zero work and can be omitted from the energy equation entirely. In fluid mechanics, when a surface element is oriented so that the pressure force $-p d\mathbf{S}$ is perpendicular to the local velocity $\mathbf{V}$, the pressure does no work on that element.
+
+**How to recognize when you can apply it.** Whenever you see a work-rate or power term involving a force and a velocity—such as $\mathbf{F} \cdot \mathbf{V}$ or $-\iint p \mathbf{V} \cdot d\mathbf{S}$ (see Entry 4, Mechanical Power)—ask whether the geometry guarantees that the force is perpendicular to the motion at some location. If the problem states that a surface is tangent to the flow (so $\mathbf{V} \perp d\mathbf{S}$), or that a force acts normal to the trajectory (like centripetal force in circular motion), then the dot product is zero at that location and the corresponding work contribution can be dropped from the energy equation. The clue is any geometric statement about the angle between force and velocity—"the wall is parallel to the flow," "the force is purely radial while the motion is tangential," etc.
+
+## 26. Stationary Point of Application
+
+> [!question]
+> 
+> (a) Why does a force at a stationary boundary do no work, even if the force is large?
+> (b) If you see a viscous work term $\dot{W}_{\text{viscous}}$ in an energy equation, what clue in the problem lets you set it to zero using this assumption?
+> (c) A force term dropped from the energy equation by this assumption still appears in the momentum equation. Why?
+
+> [!assumption] Stationary Point of Application
+> 
+> The point at which a force is applied has zero velocity: $\mathbf{V}_{\text{point}} = \mathbf{0}$.
+
+**Definition.** A force can only do work if its point of application moves. If the contact point is stationary—a wall that does not deform, a fixed support, a clamped boundary—then $\dot{W} = \mathbf{F} \cdot \mathbf{V} = 0$ regardless of the magnitude of the force, because $\mathbf{V} = \mathbf{0}$.
+
+**When it is acceptable.** This assumption is valid for any surface or boundary that is rigid and fixed in the chosen reference frame. Examples include the walls of a stationary duct, a fixed wind-tunnel model, or the ground surface in an atmospheric boundary layer. It is _not_ valid when the surface moves—a piston, a vibrating panel, a rotating blade, or a deforming membrane all have $\mathbf{V}_{\text{point}} \neq \mathbf{0}$ and therefore do work on (or receive work from) the fluid.
+
+**How to recognize when you can apply it.** Look for any work-rate or power term in the energy equation that involves a force acting at a boundary—such as $\dot{W}_{\text{viscous}} = \boldsymbol{\tau} \cdot \mathbf{V}$ or a pressure-work term at a wall. Then ask: is that boundary moving? If the problem states that the walls are "fixed," "rigid," "stationary," or simply describes a non-moving solid boundary, then $\mathbf{V} = \mathbf{0}$ at that surface and the work term can be set to zero, even though the force itself is nonzero. Note that this only drops the term from the _energy_ equation—the force still appears in the momentum equation because forces affect motion whether or not they do work. If the problem mentions a moving wall, piston, vibrating surface, or rotating boundary, the point of application is not stationary and the work term must be kept.
+
+## 27. Lumped Model (Uniform Properties)
+
+> [!question]
+> 
+> (a) What does the lumped model assume about flow properties across a cross-section?
+> (b) How does this assumption transform surface integrals like $\iint_S \rho \mathbf{V} \cdot d\mathbf{S}$ into algebraic expressions?
+> (c) What clue in a problem statement—specifically, how data is given to you—signals that you should apply this assumption?
+
+> [!assumption] Lumped Model (Uniform Properties)
+> 
+> All intensive properties ($\rho$, $p$, $T$, $\mathbf{V}$, $e$, etc.) are spatially uniform within the control volume or across a given cross-section at any instant. Variations occur only from one station to another (inlet vs. exit), not within a station.
+
+**Definition.** The lumped (or "uniform-property" or "1-D") model treats each cross-section or region as having a single representative value of every flow property. Instead of integrating a spatially varying field over an area, you replace the integral with the product of the uniform value and the area. For example, $\iint_S \rho \mathbf{V} \cdot d\mathbf{S}$ at an exit plane becomes simply $\rho_e V_e A_e$. This is the step that converts the full integral conservation equations into the algebraic "plug-flow" equations used in most first analyses of ducts, nozzles, and engines.
+
+**When it is acceptable.** The assumption is reasonable when the flow at each cross-section is well-mixed and gradients across the section are small compared to the mean values. Turbulent pipe flow far downstream of the entrance, well-designed nozzle exits, and mixing chambers with sufficient residence time are typical examples. It breaks down when strong cross-sectional gradients exist—near walls in laminar flow, in separated flow regions, or in stratified two-phase flows. Even when the assumption is not perfectly satisfied, it often gives useful engineering estimates because the integrated fluxes are dominated by the bulk (area-averaged) values.
+
+**How to recognize when you can apply it.** Look for surface integrals over inlet or exit planes—terms like $\iint_S \rho \mathbf{V} \cdot d\mathbf{S}$, $\iint_S (\rho \mathbf{V} \cdot d\mathbf{S})\mathbf{V}$, or $\iint_S (\rho \mathbf{V} \cdot d\mathbf{S})(e + V^2/2)$. If the problem states or implies that properties are "uniform at the inlet and exit," "well-mixed," or gives you single values of $V$, $p$, $T$, and $\rho$ at each station (rather than profiles), you can replace each surface integral with the algebraic product of the uniform values and the area: $\rho V A$, $(\rho V A)V$, etc. The clue is that the problem gives you one number per property per station, not a spatial distribution.
+
+## 28. Rigid-Body / Particle Idealization
+
+> [!question]
+> 
+> (a) What is the difference between the rigid-body and point-particle idealizations?
+> (b) In fluid mechanics, what does it mean to treat a fluid element as an inviscid "particle," and which governing equations result?
+> (c) What clues in a problem indicate that deformation matters and neither idealization is sufficient?
+
+> [!assumption] Rigid-Body / Particle Idealization
+> 
+> The object or fluid element is treated as either a rigid body (no internal deformation) or a point particle (no spatial extent), depending on the analysis.
+
+**Definition.** Under the rigid-body idealization, the body cannot deform: every pair of material points maintains a fixed distance. Internal stresses do no net work because there is no relative displacement between material points—all the energy goes into bulk translation and rotation. Under the point-particle idealization, the body has mass but no spatial extent, so rotational dynamics and internal stress distributions are irrelevant and Newton's second law reduces to $\mathbf{F} = m\mathbf{a}$ applied at a single point.
+
+**When it is acceptable.** The rigid-body model is appropriate when elastic deformations are negligibly small compared to the overall motion—a turbine blade treated as rigid for a thrust calculation, or a projectile in flight. The particle model is appropriate when the object's size is much smaller than the length scales of the external force field, so gradients of force across the body are negligible—a small droplet in an airstream, or an entire aircraft treated as a point mass for trajectory analysis. Both idealizations break down when internal deformation matters: a flexible wing in aeroelastic flutter, a fluid element undergoing viscous shearing, or a body large enough to experience significant tidal forces across its extent.
+
+**How to recognize when you can apply it.** If your equation is Newton's second law $\frac{d}{dt}(m\mathbf{V}) = \mathbf{F}$ or $\mathbf{F} = m\mathbf{a}$ applied to a body, ask whether the body deforms under the applied loads. If the problem describes a "rigid" body, a "particle," a projectile, or any object whose internal deformation is negligible, you can use these simplified forms without worrying about stress tensors or strain. In fluid mechanics, if the problem describes an "inviscid" fluid or uses the Euler equations, each fluid element is being treated as a particle that transmits only pressure—no internal shearing. The clue to watch for is any mention of elasticity, viscous stress, deformation, strain rate, or flexibility—these signal that the rigid/particle idealization is insufficient and you need the full stress tensor (Navier–Stokes) instead.
+
+## 29. Permeable Surface
+
+> [!question]
+> 
+> (a) What is the difference between a permeable and an impermeable control surface?
+> (b) When you see a closed-surface flux integral $\iiint_S \rho \mathbf{V} \cdot d\mathbf{S}$, how does classifying surface portions as permeable or impermeable help you evaluate it?
+> (c) In your control volume sketch, what physical feature tells you a surface segment is impermeable?
+
+> [!assumption] Permeable Surface
+> 
+> The control surface allows mass (and therefore momentum and energy) to pass through it. The surface is an imaginary mathematical boundary, not a physical wall.
+
+**Definition.** A permeable surface is a control surface—or a portion of one—through which fluid freely flows. It is a bookkeeping boundary drawn by the analyst, not a physical barrier. Mass flux $\rho \mathbf{V} \cdot d\mathbf{S}$, momentum flux $(\rho \mathbf{V} \cdot d\mathbf{S})\mathbf{V}$, energy flux, and pressure-work flux all cross permeable surfaces. By contrast, an impermeable surface (a solid wall) has $\mathbf{V} \cdot d\mathbf{S} = 0$ (no penetration), so all convective flux terms vanish on that portion of the boundary.
+
+**When it is acceptable.** This is not an "approximation" but rather a classification of the control surface. Any control-volume analysis requires identifying which parts of the boundary are permeable (inlets, exits, open boundaries) and which are impermeable (walls, solid surfaces). The analyst chooses where to draw the control surface, and that choice determines which surfaces are permeable. For example, in the engine thrust derivation (Entry 67), the inlet and exit planes are permeable while the engine casing is impermeable.
+
+**How to recognize when you can apply it.** When you see convective flux integrals—$\iint_S \rho \mathbf{V} \cdot d\mathbf{S}$ (mass), $\iint_S (\rho \mathbf{V} \cdot d\mathbf{S})\mathbf{V}$ (momentum), $\iint_S (\rho \mathbf{V} \cdot d\mathbf{S})(e + V^2/2)$ (energy)—you need to decide which portions of your control surface are permeable (fluid crosses them) and which are impermeable (solid walls where $\mathbf{V} \cdot d\mathbf{S} = 0$). The clue comes from your control volume sketch: any boundary you draw through open fluid (inlets, exits, far-field boundaries) is permeable and contributes to the flux integrals. Any boundary that coincides with a solid wall is impermeable, and the flux integral is zero there. This classification lets you reduce a closed-surface integral $\iiint_S$ to a sum over only the permeable stations.
+
+## 30. Uniform Flow
+
+> [!question]
+> 
+> (a) What does uniform flow assume about properties across a cross-section, and how does it differ from the lumped model (Entry 27)?
+> (b) What additional restriction does one-dimensional uniform flow impose beyond ordinary uniform flow?
+> (c) If a problem gives you a single velocity value at the exit rather than a profile, what assumption is implied?
+
+> [!assumption] Uniform Flow
+> 
+> All flow properties ($\rho$, $p$, $T$, $\mathbf{V}$) are spatially constant across a given cross-section. The flow may still vary from one cross-section to another (i.e., in the streamwise direction).
+
+**Definition.** Uniform flow means that at any particular station, every point on the cross-section sees the same velocity magnitude, direction, density, pressure, and temperature. There are no boundary-layer profiles, no wake deficits, and no swirl—just a single representative value at each station. **One-dimensional uniform flow** adds the further restriction that the velocity is purely in the streamwise direction (no transverse components), so the entire flow field is described by scalar functions of a single spatial coordinate (e.g., $x$) and time.
+
+**When it is acceptable.** The assumption is reasonable when the flow is well-mixed across the section—turbulent pipe flow far downstream of the entrance, the core of a well-designed nozzle, or an exit plane where mixing is complete. It is poor near walls (where boundary layers create strong velocity gradients), in separated or recirculating flow regions, and in any cross-section with significant swirl or secondary flow. Even when the profile is not perfectly flat, the assumption often gives good engineering estimates because integrated fluxes are dominated by the bulk-average values.
+
+**How to recognize when you can apply it.** Look for surface integrals at inlet or exit planes—$\iint_S \rho \mathbf{V} \cdot d\mathbf{S}$, $\iint_S (\rho \mathbf{V} \cdot d\mathbf{S})\mathbf{V}$, etc. If the problem gives you a single value of velocity, density, and pressure at each station (not a profile), or states that the flow is "uniform," "well-mixed," or "fully developed turbulent" at a cross-section, you can collapse each integral to an algebraic product: $\rho V A$, $(\rho V A)\mathbf{V}$, and so on. This is the same simplification as the lumped model (Entry 27), applied specifically to flow quantities at inlets and exits. If the problem gives you a velocity profile (e.g., parabolic laminar pipe flow) or mentions boundary-layer effects at the station, the flow is not uniform there and the integral must be evaluated with the profile.
+
+## 31. Inviscid Flow
+
+> [!question]
+> 
+> (a) What terms are dropped from the momentum and energy equations when inviscid flow is assumed?
+> (b) What clues in a problem statement (e.g., Reynolds number, flow region) tell you this assumption is safe?
+> (c) Name two situations where the inviscid assumption fails and viscous terms must be retained.
+
+> [!assumption] Inviscid Flow
+> 
+> Viscous shear stresses and heat conduction due to viscosity are neglected. The only surface force acting on the fluid is pressure.
+
+**Definition.** In an inviscid flow, the fluid is treated as having zero viscosity ($\mu = 0$). This eliminates all shear stress terms from the momentum equation and all viscous dissipation and viscous work terms from the energy equation. The only stress that acts on a fluid element is the normal pressure stress $-p d\mathbf{S}$. The governing equations reduce from the Navier–Stokes equations to the Euler equations.
+
+**When it is acceptable.** The assumption is valid in regions of the flow where viscous effects are confined to thin layers that do not significantly affect the bulk flow—the free stream around an airfoil, the core of a duct far from the walls, or high-Reynolds-number flows where inertial forces dominate. It breaks down inside boundary layers, in separated or recirculating flow regions, in wakes, and at low Reynolds numbers where viscous diffusion is comparable to convection. It also fails at solid surfaces where the no-slip condition requires viscous stress to bring the fluid to rest.
+
+**How to recognize when you can apply it.** Look for viscous stress terms in the equation you plan to use—a shear stress integral $\iint_S \boldsymbol{\tau} \cdot d\mathbf{S}$ or $\mathbf{F}_{\text{viscous}}$ in the momentum equation, or $\dot{W}_{\text{viscous}}$ in the energy equation. If the problem states "inviscid," "frictionless," "ideal fluid," or describes a high-Reynolds-number flow where you are interested in the region _outside_ the boundary layer, you can drop these viscous terms entirely. Compare Entry 58 (Eq. 2.11, inviscid momentum) with Entry 59 (Eq. 2.11a, with viscous force)—invoking this assumption is what takes you from the second form to the first. If the problem asks about drag, skin friction, boundary-layer thickness, or heat transfer at a wall, viscous effects are central and cannot be dropped.
+
+## 32. Viscous Flow
+
+> [!question]
+> 
+> (a) Why is viscous flow not really an "assumption" in the same sense as the others?
+> (b) What terms in the momentum and energy equations signal that a viscous formulation is being used?
+> (c) What quantities of engineering interest can only be computed if viscous terms are retained?
+
+> [!assumption] Viscous Flow
+> 
+> Viscous shear stresses are retained in the governing equations. The fluid has nonzero viscosity, and friction, diffusion, and dissipation effects are accounted for.
+
+**Definition.** Viscous flow is the opposite of the inviscid idealization: the full stress tensor—including both normal (pressure) and tangential (shear) components—is retained. This is not an "assumption" in the sense of dropping terms; rather, it is the decision _not_ to simplify, keeping the complete physics. The governing equations are the Navier–Stokes equations (momentum) and the full energy equation with viscous dissipation and heat conduction.
+
+**When it is acceptable.** Always, in the sense that real fluids are viscous. It is _necessary_ when the region of interest includes boundary layers, separated flow, wakes, mixing layers, low-Reynolds-number creeping flow, or any situation where shear stress materially affects the forces, heat transfer, or energy budget. In practice, the full viscous equations are used when the inviscid assumption would give unacceptable errors—near walls, in internal flows with significant friction losses, or when drag and skin friction are the quantities of interest.
+
+**How to recognize when you can apply it.** This is the default—you "apply" it by _not_ dropping the viscous terms. If the equation you are working with contains shear stress integrals $\iint_S \boldsymbol{\tau} \cdot d\mathbf{S}$, viscous work $\dot{W}_{\text{viscous}}$, or a dissipation function $\Phi$, and the problem involves boundary layers, wall friction, separation, low Reynolds numbers, or any situation where shear forces matter, you must retain all of these terms. The clue is that the problem asks about quantities that are inherently viscous—drag, skin friction coefficient, heat transfer at a wall, pressure drop due to friction—or describes flow in a region where viscous effects cannot be confined to a negligibly thin layer.
+
+## 33. Steady Flow
+
+> [!question]
+> 
+> (a) What mathematical consequence does steady flow have on every $\frac{\partial}{\partial t}$ term in the conservation equations?
+> (b) Which terms in the integral conservation equations vanish when steady flow is assumed, and what are these terms called?
+> (c) What phrases in a problem statement signal that you can apply steady flow? What phrases signal that you cannot?
+
+> [!assumption] Steady Flow
+> 
+> All flow properties at every fixed point in space are constant in time: $\frac{\partial}{\partial t}(\cdot) = 0$.
+
+**When it is acceptable.** Steady flow is valid when the boundary conditions (inflow velocity, pressure, temperature, geometry) are not changing with time and any initial transients have died out. Most cruise-condition aerodynamic analyses, fully developed pipe flows, and design-point engine calculations are treated as steady. The assumption breaks down during startup and shutdown transients, in flows with vortex shedding or turbulent fluctuations (unless time-averaged), in unsteady maneuvers, and in any situation where boundary conditions are explicitly time-dependent (pulsating flow, wave propagation, moving shocks).
+
+**How to recognize when you can apply it.** Look for $\frac{\partial}{\partial t}$ terms in the equation—the "storage" terms in the integral conservation equations: $\frac{\partial}{\partial t}\iiint_{\mathscr{V}} \rho d\mathscr{V}$ (continuity), $\frac{\partial}{\partial t}\iiint_{\mathscr{V}} \rho\mathbf{V} d\mathscr{V}$ (momentum), $\frac{\partial}{\partial t}\iiint_{\mathscr{V}} \rho(e + V^2/2) d\mathscr{V}$ (energy). If the problem states "steady," "steady-state," "design-point conditions," "cruise conditions," or otherwise indicates that nothing is changing with time, you can set every $\frac{\partial}{\partial t}$ term to zero and drop the storage terms entirely, leaving only flux and source terms. If the problem mentions startup, transient, pulsating, oscillating, time-varying boundary conditions, or asks "how long until…," the flow is unsteady and the time-derivative terms must be retained.
+
+## 34. Incompressible Fluid
+
+> [!question]
+> 
+> (a) What is the mathematical statement of incompressibility, and how does it simplify the continuity equation?
+> (b) How does incompressibility differ from uniform density? Give an example where a flow is incompressible but not uniform in density.
+> (c) What Mach number threshold is typically used to decide whether incompressibility is acceptable for a gas flow?
+
+> [!assumption] Incompressible Fluid
+> 
+> The density of a fluid particle does not change as it moves through the flow field: $\frac{D\rho}{Dt} = 0$.
+
+**Definition.** Incompressibility means that individual fluid particles maintain constant density as they travel along their paths. This is distinct from uniform density (Entry 23), which says density is the same everywhere at a given instant. A stratified ocean, for example, can have density that varies with depth (not uniform) while each water parcel approximately preserves its density as it moves (incompressible). For a single-fluid, isothermal, low-speed flow, the two concepts are effectively equivalent, which is why they are often conflated.
+
+**When it is acceptable.** The assumption holds when the Mach number is low (typically $M < 0.3$), meaning flow speeds are much smaller than the speed of sound and pressure variations are too weak to compress the fluid appreciably. It is the standard assumption for all liquid flows (liquids are nearly incompressible by nature) and for low-speed gas flows. It breaks down in high-speed aerodynamics, gas dynamics with shocks, and any flow where density changes are significant—supersonic flight, combustion chambers with large temperature rises, or acoustic wave propagation.
+
+**How to recognize when you can apply it.** Look for the continuity equation in its full form: $\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{V}) = 0$, or in integral form with $\rho$ inside the integrals. If the problem states "incompressible," "liquid," "low-speed," or gives a Mach number well below 0.3, you can simplify the continuity equation to $\nabla \cdot \mathbf{V} = 0$ (differential) or $\iint_S \mathbf{V} \cdot d\mathbf{S} = 0$ (integral)—volume flow in equals volume flow out, with no density weighting needed. You can also pull $\rho$ out of material derivatives in other equations. If the problem involves supersonic flow, shocks, large temperature variations, or compressible gas dynamics, density changes following a particle are significant and this simplification cannot be made.
+
+## 35. Normal Flow
+
+> [!question]
+> 
+> (a) What does the normal-flow assumption say about the direction of $\mathbf{V}$ relative to $d\mathbf{S}$ at a cross-section?
+> (b) How does this assumption simplify the dot product $\mathbf{V} \cdot d\mathbf{S}$ in flux integrals?
+> (c) What geometric clues in a problem tell you that normal flow is a reasonable assumption at a particular station?
+
+> [!assumption] Normal Flow
+> 
+> The velocity vector at a cross-section is everywhere perpendicular (normal) to that cross-section: $\mathbf{V} = V \mathbf{n}$, where $\mathbf{n}$ is the outward unit normal of the surface.
+
+**Definition.** Normal flow means the fluid crosses the control surface at right angles—there is no tangential or swirling velocity component at the station in question. The velocity vector is perfectly aligned with (or opposite to) the surface normal. This is a special case of uniform flow that specifically constrains the _direction_ of the velocity, not just its magnitude.
+
+**When it is acceptable.** The assumption is reasonable at well-designed inlets and exits of ducts, nozzles, and diffusers where the geometry guides the flow perpendicular to the cross-section. It is also commonly assumed at stations far upstream or downstream where the flow has no reason to have a transverse component. It breaks down at angled inlets, in flows with significant swirl (e.g., downstream of a turbine or in a vortex tube), at curved duct sections, and at any surface where the streamlines are not perpendicular to the chosen cross-section.
+
+**How to recognize when you can apply it.** Look for the dot product $\mathbf{V} \cdot d\mathbf{S}$ (or equivalently $V\cos\theta dS$) in any flux integral. If the problem describes a straight duct, a well-designed nozzle inlet/exit, or a cross-section that the flow clearly hits head-on, you can replace $\mathbf{V} \cdot d\mathbf{S}$ with simply $V dS$ (or $-V dS$ for inflow), eliminating the $\cos\theta$ factor. The clues are geometry statements like "the flow enters perpendicular to the inlet," "straight duct," or a diagram showing streamlines normal to the cross-section. If the problem mentions swirl, angled inlets, curved ducts, or a velocity with tangential components at the station, then $\cos\theta \neq 1$ and you must keep the dot product or angle factor.
+
+## 36. Negligible Gravitational Potential Energy
+
+> [!question]
+> 
+> (a) Where does gravitational potential energy appear in the energy equation, and what does it look like in per-unit-mass form?
+> (b) What comparison should you make to decide whether the $gz$ term can be dropped?
+> (c) Give an example of a flow where this assumption is valid and one where it is not.
+
+> [!assumption] Negligible Gravitational Potential Energy
+> 
+> Changes in gravitational potential energy between stations are small compared to changes in kinetic energy, enthalpy, or other energy terms, and can be dropped from the energy balance.
+
+**When it is acceptable.** This assumption is valid whenever the elevation differences in the problem are small enough that $g \Delta z$ is negligible compared to terms like $\frac{1}{2}V^2$, $\Delta h$, or $\Delta e$. In most aerodynamic and gas-dynamic applications—flow through nozzles, over airfoils, through engines—the fluid speeds are high and the elevation changes are small, so gravitational potential energy is irrelevant. It is _not_ valid in problems where elevation changes drive the flow (hydraulics, dam spillways, atmospheric convection, chimney effects) or where flow speeds are very low and gravity is the dominant energy mechanism.
+
+**How to recognize when you can apply it.** Look for a $gz$ term in the specific energy expression (making total specific energy $e + \frac{V^2}{2} + gz$) or a body-force work term $\iiint \rho(\mathbf{f} \cdot \mathbf{V}) d\mathscr{V}$ with $\mathbf{f} = \mathbf{g}$ in the energy equation. If the problem involves high-speed flow with small elevation changes—a nozzle, an airfoil, an engine—you can compare $g \Delta z$ to $\frac{1}{2}V^2$ and confirm that it is negligible, then drop the $gz$ or body-force work term. The clue is that the problem gives no elevation data or that the geometry is essentially horizontal. If the problem involves significant height differences, mentions hydrostatic effects, or describes a situation where gravity drives the flow (hydraulics, chimney draft, atmospheric convection), retain the gravitational terms.
+
+## 37. Fixed Control Volume
+
+> [!question]
+> 
+> (a) What defines a fixed control volume, and what simplification does it provide in the flux integrals?
+> (b) If the control volume is not fixed, what modification must be made to the velocity in the flux integrals?
+> (c) What clues in a problem statement tell you whether a fixed control volume is appropriate?
+
+> [!assumption] Fixed Control Volume
+> 
+> The control volume is stationary and non-deforming in the chosen inertial reference frame. Its boundaries do not move, rotate, or change shape with time.
+
+**Definition.** A fixed control volume is a region of space whose boundaries are rigidly attached to the reference frame. The control surface does not translate, rotate, expand, or contract. Because the boundary is stationary, the velocity $\mathbf{V}$ appearing in the flux integrals is the absolute fluid velocity—there is no need for a relative velocity correction. This is the simplest and most common type of control volume in introductory fluid mechanics.
+
+**When it is acceptable.** This is appropriate whenever the analyst can define a stationary region that captures the physics of interest—a duct, a wind-tunnel test section, a fixed engine nacelle, or an arbitrary region in an external flow. It is _not_ appropriate when the natural control volume moves with the body of interest, such as a control volume attached to a maneuvering aircraft, a moving piston, or a deforming bubble. In those cases a moving or deforming control volume must be used, and the flux integrals require the relative velocity $\mathbf{V} - \mathbf{V}_{\text{CS}}$ in place of $\mathbf{V}$.
+
+**How to recognize when you can apply it.** Look at the flux integrals in your conservation equation—do they use the absolute fluid velocity $\mathbf{V}$, or a relative velocity $\mathbf{V} - \mathbf{V}_{\text{CS}}$? If your control volume is attached to a stationary object (a duct, a wind tunnel, a fixed engine nacelle), you can use $\mathbf{V}$ directly in all flux terms and use $\frac{\partial}{\partial t}$ for storage terms. The clue is that the problem describes a region that does not move in the lab frame. If the problem describes a control volume attached to a moving vehicle, a translating piston, or a deforming boundary, you need the more general formulation with relative velocities in the flux integrals.
+
+## 38. Dimensional Reduction
+
+> [!question]
+> 
+> (a) What does it mean to reduce a problem from 3-D to 2-D or from 2-D to 1-D?
+> (b) What geometric or physical clues in a problem statement justify eliminating a spatial coordinate?
+> (c) How does dimensional reduction relate to the lumped-model assumption (Entry 27)?
+
+> [!assumption] Dimensional Reduction
+> 
+> The number of independent spatial variables is reduced—from 3-D to 2-D, or from 2-D to 1-D—by assuming that the flow does not vary along one or more spatial directions.
+
+**Definition.** Dimensional reduction is the simplification in which gradients in one or more coordinate directions are set to zero because the flow is uniform or symmetric along those directions. A fully 3-D flow field $\mathbf{V}(x,y,z,t)$ becomes 2-D (e.g., $\mathbf{V}(x,y,t)$ for flow over an infinite wing) or 1-D (e.g., $V(x,t)$ for quasi-one-dimensional nozzle flow). This is closely related to the uniform-flow and lumped-model assumptions (Entries 23 and 26), but stated as a general principle: any coordinate direction along which properties do not change can be eliminated as an independent variable.
+
+**When it is acceptable.** Reduction to 2-D is valid when the geometry and boundary conditions are effectively infinite or periodic in one direction—flow over a long straight wing (span direction eliminated), axisymmetric flow in a pipe (azimuthal direction eliminated). Reduction to 1-D is valid when properties vary primarily along the streamwise direction and cross-sectional variations are negligible—flow through a slowly varying duct or nozzle. The assumption breaks down when 3-D effects are significant: wingtip vortices, secondary flows in bends, corner effects, or any flow where the neglected direction has meaningful gradients.
+
+**How to recognize when you can apply it.** Look at the governing equation and count how many spatial coordinates appear in the derivatives or integrals. Then ask: does the problem geometry or boundary condition have symmetry or uniformity in one or more directions? If the problem describes an "infinite wing," "long straight duct," "axisymmetric," or "two-dimensional" flow, you can eliminate derivatives with respect to the uniform/symmetric direction. For example, $\frac{\partial}{\partial z} = 0$ for a 2-D problem in the $xy$-plane. If the problem describes a slowly varying duct with uniform cross-sectional properties, you can reduce to 1-D and replace surface integrals with algebraic inlet/exit evaluations (same signature as the lumped model, Entry 27). If the problem mentions wingtip effects, 3-D separation, corner flows, or cross-flow gradients, the neglected direction has meaningful variation and cannot be eliminated.
+
+## 39. Thermodynamic Equilibrium
+
+> [!question]
+> 
+> (a) What does local thermodynamic equilibrium (LTE) allow you to do when relating flow variables like $p$, $\rho$, and $T$?
+> (b) What physical condition must be satisfied for LTE to hold—specifically, what must be "fast" relative to what?
+> (c) In what types of flows does LTE break down, and what replaces standard equations of state in those cases?
+
+> [!assumption] Thermodynamic Equilibrium
+> 
+> At each point in the flow, the fluid is in local thermodynamic equilibrium (LTE). Standard thermodynamic relations—equations of state, caloric equations—apply at every point and every instant as if the fluid element were in a static equilibrium state.
+
+**Definition.** Thermodynamic equilibrium means that the macroscopic thermodynamic variables ($p$, $\rho$, $T$, $e$, $h$, $s$) are related to each other by the same equations of state that hold for a gas at rest in a closed container. In a flowing fluid, conditions change from point to point and over time, but if the molecular relaxation processes (collisions, energy redistribution among modes) are fast enough relative to the flow time scales, each fluid element adjusts essentially instantaneously to its local conditions. This is the assumption that allows us to write, for example, $p = \rho R T$ or $e = c_v T$ at every point in the flow field.
+
+**When it is acceptable.** LTE holds when the molecular collision frequency is much higher than the rate at which macroscopic conditions change—that is, when the flow time scales are much longer than the molecular relaxation times. This is satisfied for most subsonic and moderately supersonic flows of common gases at reasonable densities. It breaks down in hypersonic flows where vibrational and chemical relaxation times become comparable to flow residence times (e.g., behind strong shocks at Mach 10+), in rarefied gases where collisions are infrequent, and in rapidly expanding flows (such as nozzle expansions) where the gas "freezes" before reaching equilibrium.
+
+**How to recognize when you can apply it.** Look for places in your analysis where you need to relate thermodynamic variables to each other—using an equation of state like $p = \rho R T$, or a caloric relation like $e = c_v T$ or $h = c_p T$. Before applying these relations at a point in the flow, ask whether the gas has had time to reach internal equilibrium at that point. If the problem involves subsonic or moderately supersonic flow of common gases at reasonable densities, LTE is safe and you can use standard thermodynamic relations freely. The clues that should make you pause are problem statements involving hypersonic flow (Mach 10+), strong shocks in high-temperature gases, rapidly expanding nozzle flows, or rarefied conditions—in these cases molecular relaxation may be too slow for equilibrium, and you would need finite-rate chemistry or multi-temperature models instead of simple equations of state.
+
+## 40. Adiabatic Assumption
+
+> [!question]
+> 
+> (a) What terms in the energy equation are set to zero when the adiabatic assumption is applied?
+> (b) What clues in a problem statement tell you the adiabatic assumption is reasonable?
+> (c) Write the simplified station-to-station energy balance that results from combining steady, adiabatic, and no-shaft-work assumptions.
+
+> [!assumption] Adiabatic Assumption
+> 
+> No heat is transferred into or out of the system (or across the control surface): $\dot{Q} = 0$.
+
+**When it is acceptable.** The adiabatic assumption is valid when heat transfer across the system boundary is negligible compared to the other energy terms (kinetic energy, enthalpy flux, work). This is often reasonable for high-speed flows where the fluid passes through the control volume so quickly that there is insufficient time for significant heat exchange—flow through a short nozzle, across a shock wave, or through a turbine stage. It is also reasonable when the boundaries are well-insulated. It breaks down when heat transfer is a dominant mechanism: combustion chambers, heat exchangers, cooling systems, or any flow with large temperature differences between the fluid and its surroundings and sufficient residence time for conduction or convection to matter.
+
+**How to recognize when you can apply it.** Look for heat transfer terms in the energy equation: a volumetric heat addition $\iiint \rho \dot{q} d\mathscr{V}$, a surface heat flux integral, or a $B_1$ term in the control volume power balance (Entry 54). If the problem states "adiabatic," "insulated," "no heat transfer," or describes a process that happens so quickly that heat exchange is negligible (flow through a short nozzle, across a shock, through a turbine stage), you can set these heat terms to zero and drop them. In algebraic station-to-station energy balances, this means writing $h_1 + \frac{V_1^2}{2} = h_2 + \frac{V_2^2}{2}$ with no $q$ term. If the problem involves a heat exchanger, combustion, cooling, significant temperature differences between the fluid and walls with enough residence time for conduction, the heat terms must be retained.
+
+# Integral Components
+
+## 41. Momentum storage inside the control volume (Eq. 2.9)
+
+> [!question]
+> 
+> (a) Write the momentum-storage term for a fixed control volume. Why is this term a vector?
+> (b) What does it measure physically, and when is it exactly zero?
+> (c) How does this term differ from the momentum-flux term across the control surface?
+> (d) In the integral momentum equation, what symbol is commonly used for this term?
+
+> [!equation] Momentum storage inside the control volume (Eq. 2.9)
+> 
+> $$ \frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho \mathbf{V} d\mathscr{V} $$
+
+This term is the time rate of change of the total momentum presently stored inside the fixed control volume. Because momentum is a vector quantity, the storage term is also a vector. In steady flow this term vanishes; in unsteady flow it measures how the momentum inventory inside the volume is building up or depleting with time. In Eq. 2.9, this term is denoted by $\mathbf{A}_2$.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho \mathbf{V}$|N·s/m³|kg·m⁻²·s⁻¹|**Momentum Density**|The local momentum per unit volume at a point inside the control volume.|
+|$\iiint_{\mathscr{V}}\rho \mathbf{V} d\mathscr{V}$|N·s|kg·m·s⁻¹|**Momentum Inventory**|The total momentum vector of all fluid currently contained in the control volume.|
+|$\mathbf{A}_2 = \frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho \mathbf{V} d\mathscr{V}$|N|kg·m·s⁻²|**Momentum Storage Rate**|The rate at which the momentum inventory inside the volume is building up or depleting with time.|
+
+## 42. Mass contained inside the control volume
+
+> [!question]
+> 
+> (a) Write the expression for the total mass inside a fixed control volume. Explain what the integrand represents physically.
+> (b) What happens to this integral if the density is spatially uniform throughout the volume?
+> (c) If the fluid is incompressible and the control volume is fixed in space, what can you say about the time derivative of this expression? What does that imply for the continuity equation?
+> (d) Where does this expression appear in the governing equations, and what role does it play?
+
+> [!equation] Mass contained inside the control volume
+> 
+> $$ \iiint_{\mathscr{V}}\rho d\mathscr{V} $$
+
+This integral gives the instantaneous mass inventory of the fluid currently residing inside the fixed control volume. It sums the local mass density $\rho$ over the entire region to produce the total scalar mass at that instant. If the density is spatially uniform, the integral simplifies to $\rho \mathscr{V}$ (density times volume). This expression appears inside the storage term of the continuity equation: $\frac{\partial}{\partial t}\iiint \rho d\mathscr{V}$. For an incompressible fluid ($\rho = \text{const}$) in a fixed control volume, this time derivative is zero, which means the continuity equation reduces to the requirement that net mass flux through the surface is zero — what flows in must flow out.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho$|kg/m³|kg·m⁻³|**Density**|The local mass per unit volume at a point in the fluid.|
+|$\iiint_{\mathscr{V}}\rho d\mathscr{V}$|kg|kg|**Total Mass Inventory**|The total scalar mass of fluid contained inside the control volume.|
+
+## 43. Momentum contained inside the control volume
+
+> [!question]
+> 
+> (a) Write the expression for the total momentum inside a fixed control volume. Is the result a scalar or a vector?
+> (b) What is the physical meaning of the integrand $\rho\mathbf{V}$, and why is density needed?
+> (c) If the properties inside the control volume are spatially uniform, what does this integral simplify to? How does this connect to the familiar point-mass momentum $m\mathbf{V}$?
+> (d) Under steady-flow conditions, what happens to the time derivative of this expression, and what does that imply for the momentum equation?
+
+> [!equation] Momentum contained inside the control volume
+> 
+> $$ \iiint_{\mathscr{V}}\rho \mathbf{V} d\mathscr{V} $$
+
+This integral is the total momentum vector of all fluid presently inside the fixed control volume. The integrand $\rho\mathbf{V}$ is the momentum density — density is needed to convert velocity (a per-mass quantity) into momentum per unit volume, which is the form required for volume integration. If the properties inside the volume are spatially uniform, the integral simplifies to $(\rho \mathscr{V})\mathbf{V} = m\mathbf{V}$, recovering the familiar point-mass momentum. This expression appears inside the storage term of the momentum equation: $\frac{\partial}{\partial t}\iiint \rho\mathbf{V} d\mathscr{V}$. Under steady-flow conditions, this time derivative vanishes, meaning the momentum inventory inside the volume is not changing — all momentum changes come from flux across the boundaries.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho \mathbf{V}$|N·s/m³|kg·m⁻²·s⁻¹|**Momentum Density**|The local momentum per unit volume; converts velocity to a form suitable for volume integration.|
+|$\iiint_{\mathscr{V}}\rho \mathbf{V} d\mathscr{V}$|N·s|kg·m·s⁻¹|**Total Momentum Inventory**|The total resultant momentum vector of all fluid inside the control volume.|
+
+## 44. Net mass flow into a fixed control volume
+
+> [!question]
+> 
+> (a) Write the expression for the net mass flow _into_ a fixed control volume. Why is a negative sign needed in front of the surface integral?
+> (b) If this expression yields a positive value, what is physically happening to the mass inside the control volume?
+> (c) How does this expression relate to the storage term in the continuity equation?
+
+> [!equation] Net mass flow into a fixed control volume
+> 
+> $$ -\iint_{S}\rho \mathbf{V}\cdot d\mathbf{S} $$
+
+This surface integral gives the net rate at which mass enters a fixed control volume. With the standard outward-pointing area vector, $\iint_{S}\rho \mathbf{V}\cdot d\mathbf{S}$ represents net outflow. The minus sign reverses that convention so that a positive value corresponds to net inflow, or mass entering faster than it leaves.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho \mathbf{V}\cdot d\mathbf{S}$|kg/s|kg·s⁻¹|**Differential Mass Flux**|The elemental mass flow rate through a surface patch; positive for outward flow and negative for inward flow.|
+|$\iint_{S}\rho \mathbf{V}\cdot d\mathbf{S}$|kg/s|kg·s⁻¹|**Net Outflow Rate**|The total mass flow rate leaving the control volume.|
+|$-\iint_{S}\rho \mathbf{V}\cdot d\mathbf{S}$|kg/s|kg·s⁻¹|**Net Inflow Rate**|The total mass flow rate entering the control volume, equal to mass in minus mass out.|
+
+## 45. Rate of work on the fluid due to pressure forces (Eq. 2.14)
+
+> [!question]
+> 
+> (a) Write the expression for the total rate of work done on the fluid by pressure forces on the control surface. Explain the origin of the negative sign.
+> (b) A pressure force acts on a solid, stationary wall of the control volume. Does this pressure force do any work? Why or why not?
+> (c) Explain the physical difference between pressure doing work at an inlet (fluid entering) versus at an exit (fluid leaving). Which represents energy added to the system?
+> (d) When the surface integrals in the energy equation are evaluated at 1-D uniform stations, the pressure work combines with the internal energy flux to produce enthalpy. Show why.
+
+> [!equation] Rate of work on the fluid due to pressure forces (Eq. 2.14)
+> 
+> $$ -\iint_{S} p \mathbf{V}\cdot d\mathbf{S} $$
+
+This surface integral gives the net power transferred to the fluid by pressure forces as fluid crosses the control surface. At a solid, stationary wall, $\mathbf{V} = \mathbf{0}$, so pressure does no work there — work only occurs where fluid actually crosses the boundary. With the outward-normal convention, inlet contributions (where $\mathbf{V}\cdot d\mathbf{S} < 0$) give positive power (surroundings push fluid in), while exit contributions give negative power (fluid pushes out against external pressure). When evaluated at 1-D uniform stations, this pressure-work integral combines with the internal-energy flux $\iint \rho e(\mathbf{V}\cdot d\mathbf{S})$ to produce an enthalpy flux: $\rho(e + p/\rho)V A = \rho h V A$. This is how enthalpy naturally appears in the steady-flow energy equation for open systems.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$p$|Pa|kg·m⁻¹·s⁻²|**Pressure**|The local thermodynamic pressure at the control surface.|
+|$-p (\mathbf{V}\cdot d\mathbf{S})$|W|kg·m²·s⁻³|**Elemental Pressure Power**|The differential rate of pressure work on the fluid through a surface patch; positive at inlets, negative at exits.|
+|$-\iint_{S} p \mathbf{V}\cdot d\mathbf{S}$|W|kg·m²·s⁻³|**Net Pressure-Work Rate**|The total rate at which pressure forces add mechanical energy to the fluid across the full control surface.|
+
+## 46. Momentum flux across the control surface (Eq. 2.8)
+
+> [!question]
+> 
+> (a) Write the expression for the net momentum flux across a control surface and identify the two factors in the integrand. What does each represent?
+> (b) Explain why the momentum flux through a solid, impermeable wall is zero, even though the fluid adjacent to it may be moving fast.
+> (c) For a single-inlet, single-exit duct with uniform properties at each station, what does the momentum flux integral simplify to?
+> (d) In steady flow, the momentum-storage term vanishes. What does this imply about the relationship between $\mathbf{A}_1$ and the net force on the fluid?
+> (e) Is $\mathbf{A}_1$ a force? Explain why or why not, and describe the circumstances under which $\mathbf{A}_1$ numerically equals the net force.
+
+> [!equation] Momentum flux across the control surface (Eq. 2.8)
+> 
+> $$ \mathbf{A}_1=\iint_{S}(\rho \mathbf{V}\cdot d\mathbf{S}) \mathbf{V} $$
+
+This integral gives the net rate at which momentum is convected across the control surface by the moving fluid. The factor $\rho \mathbf{V}\cdot d\mathbf{S}$ selects the mass crossing each surface element, and multiplying by $\mathbf{V}$ converts that mass flow into momentum transport. At an impermeable wall, $\mathbf{V}\cdot d\mathbf{S} = 0$ (no fluid crosses the wall), so the momentum flux there is zero even if the fluid adjacent to the wall is moving fast. For a single-inlet, single-exit duct with uniform properties, the integral simplifies to $\dot{m}\mathbf{V}_{\text{out}} - \dot{m}\mathbf{V}_{\text{in}}$. Note that $\mathbf{A}_1$ is not itself a force — it is a rate of momentum change. However, in steady flow the storage term $\mathbf{A}_2$ vanishes, and the momentum equation becomes $\mathbf{A}_1 = \mathbf{F}_{\text{net}}$, so the momentum flux numerically equals the net force.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho \mathbf{V} \cdot d\mathbf{S}$|kg/s|kg·s⁻¹|**Differential Mass Flow**|The mass flow rate through a surface element; its sign distinguishes inflow from outflow.|
+|$(\rho \mathbf{V} \cdot d\mathbf{S})\mathbf{V}$|N|kg·m·s⁻²|**Differential Momentum Flux**|The momentum per unit time transported through a specific surface patch.|
+|$\mathbf{A}_1 = \iint_{S}(\rho \mathbf{V}\cdot d\mathbf{S}) \mathbf{V}$|N|kg·m·s⁻²|**Net Momentum Flux**|The total convective momentum transport across the control surface; equals $\mathbf{F}_{\text{net}}$ in steady flow.|
+
+## 47. Rate of work on the fluid due to body forces (Eq. 2.15)
+
+> [!question]
+> 
+> (a) Write the expression for the total rate of work done on the fluid by body forces throughout a control volume. Identify each factor in the integrand.
+> (b) Explain why the dot product $\mathbf{f} \cdot \mathbf{V}$ appears. Under what geometric condition between the force and velocity is no work done?
+> (c) If gravity is the only body force and the fluid is flowing horizontally, what is the value of this integral?
+> (d) In most aerodynamic applications, this term is neglected. Why?
+
+> [!equation] Rate of work on the fluid due to body forces (Eq. 2.15)
+> 
+> $$ \iiint_{\mathscr{V}}\rho(\mathbf{f}\cdot\mathbf{V}) d\mathscr{V} $$
+
+This integral gives the total power supplied to the fluid by body forces (such as gravity) acting throughout the control volume. The dot product $\mathbf{f}\cdot\mathbf{V}$ gives the power per unit mass — only the component of the body force aligned with the velocity does work. If gravity is the only body force and the fluid flows horizontally ($\mathbf{g} \perp \mathbf{V}$), the dot product is zero everywhere and this integral vanishes. In most aerodynamic applications, this term is neglected because $g \Delta z$ is tiny compared to $\frac{1}{2}V^2$ or $\Delta h$ — the flow speeds are too high and elevation changes too small for gravity to matter energetically.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\mathbf{f} \cdot \mathbf{V}$|m²/s³|m²·s⁻³|**Specific Power**|The rate of work done per unit mass; zero when $\mathbf{f} \perp \mathbf{V}$.|
+|$\rho (\mathbf{f} \cdot \mathbf{V})$|W/m³|kg·m⁻¹·s⁻³|**Power Density**|The mechanical power added per unit volume at a point; the form needed inside a volume integral.|
+|$\iiint_{\mathscr{V}} \rho(\mathbf{f}\cdot\mathbf{V}) d\mathscr{V}$|W|kg·m²·s⁻³|**Total Body-Force Power**|The net rate at which body forces add mechanical energy to the fluid in the control volume.|
+
+## 48. Total body force acting on the control volume (Eq. 2.5)
+
+> [!question]
+> 
+> (a) Write the expression for the total body force acting on the fluid inside a control volume. What does the integrand $\rho\mathbf{f}$ represent?
+> (b) How does this "action-at-a-distance" force differ from a surface force like pressure?
+> (c) If gravity is the only body force, what does $\mathbf{f}$ equal, and what does the integral reduce to for a fluid of uniform density?
+> (d) Where does this expression appear in the momentum equation, and on which side (forces or momentum change)?
+
+> [!equation] Total body force acting on the control volume (Eq. 2.5)
+> 
+> $$ \iiint_{\mathscr{V}}\rho \mathbf{f} d\mathscr{V} $$
+
+This integral gives the total body force acting on all fluid inside the control volume. Unlike pressure, which acts only on the surface, body forces like gravity act on every particle throughout the volume. The integrand $\rho\mathbf{f}$ is the force per unit volume (see Entry 5). If gravity is the only body force, $\mathbf{f} = \mathbf{g}$, and for uniform density the integral reduces to $\rho\mathbf{g}\mathscr{V} = m\mathbf{g}$ — simply the weight of the fluid. This expression appears on the force (right-hand) side of the integral momentum equation, alongside the pressure force $-\iint_S p d\mathbf{S}$.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho \mathbf{f}$|N/m³|kg·m⁻²·s⁻²|**Body Force Density**|The force per unit volume; $\rho$ converts the per-mass acceleration $\mathbf{f}$ to a per-volume force for integration.|
+|$\iiint_{\mathscr{V}}\rho \mathbf{f} d\mathscr{V}$|N|kg·m·s⁻²|**Net Body Force**|The total resultant body-force vector acting on the fluid inside the control volume.|
+
+## 49. Energy contained inside the control volume
+
+> [!question]
+> 
+> (a) Write the expression for the total energy contained inside a control volume. Identify the two forms of energy included in the integrand and explain what each represents physically.
+> (b) What role does density play in the integrand, and why is it necessary for the integration to work?
+> (c) If the properties inside the control volume can be approximated as spatially uniform, what does the integral simplify to?
+> (d) Under what physical conditions might you drop the kinetic energy term, and what does the total specific energy reduce to in that case?
+
+> [!equation] Energy contained inside the control volume
+> 
+> $$ \iiint_{\mathscr{V}}\rho\left(e+\frac{V^2}{2}\right) d\mathscr{V} $$
+
+This integral gives the total energy currently stored inside the fixed control volume. The integrand combines two contributions: the internal (thermal) energy $e$ and the kinetic energy $\frac{V^2}{2}$, both per unit mass. Density $\rho$ converts this per-mass energy into per-volume energy — the form needed for volume integration (the same $\rho$-multiplication logic as Entries 5, 9, and 16). If the properties are spatially uniform, the integral simplifies to $\rho(e + V^2/2)\mathscr{V} = m(e + V^2/2)$. In flows where the bulk velocity is very small compared to the speed of sound, the kinetic energy $V^2/2$ is negligible relative to the internal energy $e$, and the total specific energy reduces to just $e$.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho\left(e+\frac{V^2}{2}\right)$|J/m³|kg·m⁻¹·s⁻²|**Total Energy Density**|The local energy per unit volume; the form needed inside the volume integral.|
+|$\iiint_{\mathscr{V}}\rho(\dots) d\mathscr{V}$|J|kg·m²·s⁻²|**Total Energy Stored**|The total energy of all fluid inside the control volume at a given instant.|
+
+## 50. Time rate of change of energy inside the control volume (Eq. 2.18)
+
+> [!question]
+> 
+> (a) Write the expression for the time rate of change of energy inside a control volume. What does it measure physically?
+> (b) Under what conditions is this term exactly zero? What type of flow does that correspond to?
+> (c) Give a physical example of a transient process where this term would be significant.
+> (d) How does this term relate to $B_3$ in the control volume power balance? Is it the whole of $B_3$?
+
+> [!equation] Time rate of change of energy inside the control volume (Eq. 2.18)
+> 
+> $$ \frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho\left(e+\frac{V^2}{2}\right) d\mathscr{V} $$
+
+This term is the rate at which the total energy inventory inside the fixed control volume is changing with time. It is zero under steady-flow conditions, when all properties at every fixed point are constant. It is significant during transient processes — for example, during the startup of a jet engine (energy building up inside the combustion chamber) or the pressurization of a tank. This term is only one part of $B_3$ in the control volume power balance: $B_3$ also includes the convective energy flux across the surface (Entry 51). Together, storage plus flux give the total rate of energy change for the flowing fluid.
+
+| **Expression**                                                                                 | **Units** | **Base Units** | **Name**                 | **Description**                                                                                         |
+| ---------------------------------------------------------------------------------------------- | --------- | -------------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| $\rho \left(e+\frac{V^2}{2}\right)$                                                            | J/m³      | kg·m⁻¹·s⁻²     | **Total Energy Density** | The local energy per unit volume at each point in the control volume.                                   |
+| $\frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho\left(e+\frac{V^2}{2}\right) d\mathscr{V}$ | W         | kg·m²·s⁻³      | **Energy Storage Rate**  | The rate at which the total energy inside the volume is accumulating or depleting; zero in steady flow. |
+
+## 51. Net rate of energy flow across the control surface (Eq. 2.17)
+
+> [!question]
+> 
+> (a) Write the net-rate-of-energy-flow term across a control surface in both equivalent forms.
+> (b) Why is the total specific energy $e + V^2/2$ rather than just $e$? Under what conditions would the kinetic energy contribution be negligible?
+> (c) How do the forms $\rho\left(e+\frac{V^2}{2}\right)\mathbf{V}\cdot d\mathbf{S}$ and $(\rho \mathbf{V}\cdot d\mathbf{S})\left(e+\frac{V^2}{2}\right)$ express the same physical transport?
+> (d) How does the sign convention (outward $d\mathbf{S}$) distinguish energy being carried out of the volume from energy being carried in?
+
+> [!equation] Net rate of energy flow across the control surface (Eq. 2.17)
+> 
+> $$
+> \iint_{S}\rho\left(e+\frac{V^2}{2}\right)\mathbf{V}\cdot d\mathbf{S}
+> $$
+> 
+> $$
+> \iint_{S}(\rho \mathbf{V}\cdot d\mathbf{S})\left(e+\frac{V^2}{2}\right)
+> $$
+
+This term is the net rate at which total energy is carried across the control surface by the moving fluid. The two forms shown are equivalent: the left emphasizes the energy-flux vector $\rho(e + V^2/2)\mathbf{V}$, while the right reads as "mass flow rate times total specific energy." Both internal and kinetic energy are included because the flow carries both forms simultaneously; the kinetic contribution would be negligible only in very slow flows where $V^2/2 \ll e$. The sign convention follows $d\mathbf{S}$: outflow ($\mathbf{V}\cdot d\mathbf{S} > 0$) contributes positive energy export, inflow contributes negative (i.e., energy import). A positive integral means net energy is leaving the control volume.
+
+| **Expression**                                                            | **Units** | **Base Units**                     | **Name**                       | **Description**                                                                                    |
+| ------------------------------------------------------------------------- | --------- | ---------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------- |
+| $\rho \mathbf{V}\cdot d\mathbf{S}$                                        | kg/s      | $kg\cdot s^{-1}$                  | **Differential Mass Flow**     | The signed mass flow rate through a surface element.                                               |
+| $e+\frac{V^2}{2}$                                                         | J/kg      | $m^{2}\cdot s^{-2}$               | **Total Specific Energy**      | The energy carried per unit mass of fluid, including both internal and kinetic energy.             |
+| $\iint_{S}(\rho \mathbf{V}\cdot d\mathbf{S})\left(e+\frac{V^2}{2}\right)$ | W         | $kg\cdot m^{2}\cdot s^{-3}$       | **Net Convective Energy Flow** | The net rate at which total energy is transported across the control surface by bulk fluid motion. |
+
+## 52. Total surface force due to pressure (Eq. 2.6)
+
+> [!question]
+> 
+> (a) Write the expression for the net surface force due to pressure on a control volume. Why is the negative sign necessary?
+> (b) If a control volume is immersed in a fluid at uniform pressure $p_\infty$ everywhere on its surface, what is the net pressure force? Explain physically.
+> (c) Under what conditions does a net pressure force arise? Relate this to the concept of a pressure gradient.
+> (d) How does this term differ from the pressure _work_ term $-\iint_S p \mathbf{V}\cdot d\mathbf{S}$ that appears in the energy equation?
+
+> [!equation] Total surface force due to pressure (Eq. 2.6)
+> 
+> $$ -\iint_{S}p d\mathbf{S} $$
+
+This integral gives the net vector force exerted on the fluid by pressure acting on the control surface. The negative sign is needed because pressure pushes inward on the fluid while $d\mathbf{S}$ points outward by convention. If the pressure is uniform everywhere on the surface, the integral sums to zero (the inward pushes cancel from all sides); a net force arises only when pressure varies across the surface, i.e., when a pressure gradient exists. This term differs from the pressure _work_ term $-\iint_S p \mathbf{V}\cdot d\mathbf{S}$ (Entry 45) in a fundamental way: the force term has $d\mathbf{S}$ alone and produces a vector (force), while the work term has $\mathbf{V}\cdot d\mathbf{S}$ and produces a scalar (power). They appear in different equations — force in the momentum equation, work in the energy equation.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$-p d\mathbf{S}$|N|kg·m·s⁻²|**Elemental Pressure Force**|The inward pressure force on a surface patch; the negative sign aligns with the physical inward direction.|
+|$-\iint_{S}p d\mathbf{S}$|N|kg·m·s⁻²|**Net Pressure Force**|The total resultant force vector due to pressure on the entire control surface; zero if $p$ is uniform.|
+
+## 53. Volumetric heat addition rate (Eq. 2.13)
+
+> [!question]
+> 
+> (a) Write the expression for $B_1$, the volumetric heat addition rate to the fluid inside the control volume. Identify each factor in the integrand.
+> (b) What are some physical sources of volumetric heating $\dot{q}$? Why is thermal conduction across the boundary _not_ included in this term for the inviscid formulation?
+> (c) Under what conditions is it appropriate to set $B_1 = 0$? What is this assumption called?
+> (d) In a jet engine combustion chamber, what physical process does $\dot{q}$ primarily represent?
+
+> [!equation] Volumetric heat addition rate (Eq. 2.13)
+> 
+> $$ B_1=\iiint_{\mathscr{V}}\dot{q} \rho d\mathscr{V} $$
+
+This integral gives the total rate at which thermal energy is added to the fluid throughout the interior of the control volume. The integrand $\rho\dot{q}$ is the heat power density (see Entry 10): $\dot{q}$ is the heat added per unit mass per unit time, and $\rho$ converts it to per-volume for integration. Physical sources of $\dot{q}$ include radiation absorption, chemical heat release, and internal heating elements. Thermal conduction across the boundary is _not_ included here in the inviscid formulation because conduction is a viscous (diffusive) transport mechanism — it is restored in the generalized form (Eq. 2.20a). When heat transfer is negligible (high-speed flow with short residence time, or insulated boundaries), $B_1$ can be set to zero; this is the _adiabatic assumption_ (Entry 40). In a jet engine combustion chamber, $\dot{q}$ primarily represents the chemical energy of fuel being converted to thermal energy.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\dot{q}$|W/kg|m²·s⁻³|**Specific Heat Addition**|The heat added per unit mass per unit time from volumetric sources (radiation, chemical reactions).|
+|$\rho \dot{q}$|W/m³|kg·m⁻¹·s⁻³|**Heat Power Density**|The heat added per unit volume; the form needed inside the volume integral.|
+|$B_1 = \iiint_{\mathscr{V}}\dot{q} \rho d\mathscr{V}$|W|kg·m²·s⁻³|**Total Heating Rate**|The net rate of thermal energy addition to the fluid; set to zero under the adiabatic assumption.|
+
+# Full Conservation Equations
+
+## 54. Control Volume Power Balance (Eq. 2.12)
+
+> [!question]
+> 
+> (a) Write the general form of the control volume power balance and identify what each of the three terms represents physically. What kind of quantities are all three terms (i.e., what are their dimensions)?
+> (b) If the total power input exceeds the net energy flux leaving the control volume, what must be happening inside the volume?
+> (c) What two physical phenomena are excluded from the standard form of this equation due to the inviscid flow assumption? What must be restored if viscous effects matter?
+> (d) Under what conditions can you set the net heating power to zero, and what is this assumption called?
+> (e) If the flow is steady, which part of the total rate of energy change drops out, and what survives?
+> (f) To reduce the steady-flow form down to the familiar thermodynamics equation involving enthalpy, two additional steps are required beyond dropping the time derivative. What are they, and why does enthalpy appear in place of internal energy?
+
+> [!equation] Control Volume Power Balance (Eq. 2.12)
+> 
+> $$ B_1+B_2=B_3 $$
+
+This equation is the power balance for a fixed control volume: the total rate at which energy is supplied to the fluid (heat $B_1$ plus mechanical work $B_2$) must equal the total rate at which the fluid's energy changes ($B_3$). All three terms have dimensions of power (watts). $B_3$ combines two mechanisms: energy accumulating inside the volume (storage) and energy being carried out by the flow (convective flux). If the power input $B_1 + B_2$ exceeds the net energy leaving via flux, then energy must be accumulating inside the volume — the storage part of $B_3$ is positive. In steady flow the storage term vanishes, and $B_3$ reduces to pure convective flux. Under the inviscid assumption, viscous work and conductive heat transfer are excluded; restoring them gives the generalized form (Eq. 2.20a). Setting $B_1 = 0$ is the adiabatic assumption (Entry 40).
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$B_1$|W|kg·m²·s⁻³|**Net Heating Power**|The total rate of thermal energy addition to the fluid (Entry 53).|
+|$B_2$|W|kg·m²·s⁻³|**Net Mechanical Power**|The total rate of work on the fluid by pressure and body forces (Entry 66).|
+|$B_3$|W|kg·m²·s⁻³|**Total Rate of Energy Change**|The sum of energy storage rate (Entry 50) and convective energy flux (Entry 51).|
+
+### Reduced Forms
+
+For the assumptions referenced below, see Entries 21–40.
+
+**Steady flow** (Entry 33): The storage part of $B_3$ drops out, leaving:
+
+$$ B_1+B_2=\iint_S \rho\left(e+\frac{V^2}{2}\right) \mathbf{V} \cdot d \mathbf{S} $$
+
+> [!NOTE]
+> To reach the familiar Steady-Flow Energy Equation from introductory thermodynamics, two further steps are required beyond just dropping the time derivative: (a) The pressure-work surface integral ( $-\iint p \mathbf{V} \cdot d \mathbf{S}$ ) must be combined with the internal energy flux using the enthalpy identity $h=e+p / \rho$. This absorbs the pressure work into the flux term, replacing $e$ with $h$. (b) The remaining surface integrals must be evaluated at discrete, one-dimensional inlet and exit stations with uniform properties. Only then does the equation collapse to:
+> 
+> $$ \dot{Q}+\dot{W}=\dot{m} \Delta\left(h+\frac{V^2}{2}+g z\right) $$
+> 
+> The appearance of enthalpy $h$ in place of ( $e+p / \rho$ ) is not trivial-it reflects the fact that pressure work on the fluid entering and leaving the control volume has been folded into the energy flux.
+
+**Modeling note:** Chemical energy released or absorbed by reactions is incorporated into the internal energy $e$, not modeled as a separate source in $B_1$. This is a convention consistent with the treatment throughout the text (Chapters 16–17).
+
+## 55. Integral continuity equation (Eq. 2.2)
+
+> [!question]
+> 
+> (a) Write the integral form of the continuity equation for a fixed control volume. Identify the two terms and explain what each represents physically.
+> (b) Why does the right-hand side equal zero? What physical principle does this reflect?
+> (c) The surface integral uses the dot product $\rho \mathbf{V}\cdot d\mathbf{S}$. Explain how the sign convention (outward-pointing $d\mathbf{S}$) automatically distinguishes inflow from outflow.
+> (d) What happens to the equation under steady-flow conditions? Write the reduced form and explain why it means "what flows in must flow out."
+> (e) If the flow is also incompressible ($\rho = \text{const}$), what further simplification occurs? Are "steady" and "incompressible" the same assumption?
+
+> [!equation] Integral continuity equation (Eq. 2.2)
+> 
+> $$ \frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho d\mathscr{V}+\iint_{S}\rho \mathbf{V}\cdot d\mathbf{S}=0 $$
+
+The net rate of change of mass within a fixed region of space is determined by the balance between internal mass accumulation and the net flow of mass crossing the boundary. This is a mass "budget." Since mass cannot be created or destroyed, any mass exiting the boundary must result in an equal depletion of the mass stored inside.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\rho(\mathbf{V} \cdot d\mathbf{S})$|kg/s|kg·s⁻¹|**Mass Flux**|The building block of all flux terms; represents mass flow per unit time through an area element.|
+|$\frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho d\mathscr{V}$|kg/s|kg·s⁻¹|**Storage Term**|The time-rate of change (accumulation or depletion) of the total mass inventory inside the volume.|
+|$\iint_{S}\rho \mathbf{V}\cdot d\mathbf{S}$|kg/s|kg·s⁻¹|**Net Outflow**|The total mass crossing the surface. Positive values denote net loss (outflow); negative denotes net gain (inflow).|
+
+### Reduced Forms
+
+For the assumptions referenced below, see Entries 21–40.
+
+**Steady flow** (Entry 33): The storage term drops out, leaving:
+
+$$ \iint_S \rho \mathbf{V} \cdot d \mathbf{S}=0 $$
+
+This states that net mass flux across the control surface is zero — what flows in must flow out. For a single-inlet, single-exit duct with uniform properties (Entry 27):
+
+$$ \rho_1 V_1 A_1=\rho_2 V_2 A_2=\dot{m} $$
+
+**Incompressible flow** (Entry 34): $\rho$ factors out, and the steady continuity equation becomes a purely kinematic constraint:
+
+$$ \iint_S \mathbf{V} \cdot d \mathbf{S}=0 $$
+
+For a duct with one inlet and one exit: $V_1 A_1=V_2 A_2$.
+
+> [!NOTE]
+> Incompressible $\neq$ Steady. Setting $\rho=$ const and assuming steady flow are independent simplifications. An incompressible flow can still be unsteady (e.g., water hammer), in which case the storage term vanishes anyway (since $\partial \rho / \partial t=0$ when $\rho$ is constant), but the velocity field is still time-dependent.
+
+## 56. Generalized Integral Energy Equation (Eq. 2.20a)
+
+> [!question]
+> 
+> (a) Write the generalized integral energy equation (Eq. 2.20a) and identify every term on both sides.
+> (b) In what sense is this the "most complete" energy equation in the chapter? What three phenomena does it include that the inviscid form (Eq. 2.20) does not?
+> (c) Explain how you reduce Eq. 2.20a to the inviscid form Eq. 2.20. Which terms are dropped and what physical assumptions justify dropping them?
+> (d) Starting from the steady-flow version of this equation, describe the two additional steps needed to arrive at the classical Steady-Flow Energy Equation. Why does enthalpy $h$ appear in place of internal energy $e$?
+> (e) Under what conditions is the gravitational potential energy term negligible, and when must it be retained?
+
+$$\dot{Q}+\dot{W}_{\text {shaft }}+\dot{W}_{\text {viscous }}-\iint_S p \mathbf{V} \cdot d \mathbf{S}+\iiint_{\mathscr{Y}} \rho(\mathbf{f} \cdot \mathbf{V}) d \mathscr{Y}$$
+
+> [!equation] Generalized Integral Energy Equation (Eq. 2.20a)
+> 
+> $$ \dot{Q}+\dot{W}_{\text {shaft}}+\dot{W}_{\text {viscous}} -\iint_{S} p \mathbf{V} \cdot d \mathbf{S} +\iiint_{\mathscr{V}} \rho(\mathbf{f} \cdot \mathbf{V}) d \mathscr{V} $$
+> 
+> $$ =\frac{\partial}{\partial t}\iiint_{\mathscr{V}} \rho\left(e+\frac{V^{2}}{2}\right) d \mathscr{V} +\iint_{S} \rho\left(e+\frac{V^{2}}{2}\right) \mathbf{V} \cdot d \mathbf{S} $$
+
+This is the most comprehensive form of the Power Balance for a control volume. It states that the total rate of energy entering the system—via heat, mechanical shafts, friction, and work done by pressure or gravity—must exactly equal the rate at which energy is stored inside the volume plus the net rate at which energy is carried out by the flowing fluid.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\dot{Q}$|W|kg·m²·s⁻³|**Net Heating Power**|The rate of heat addition from all external sources (conduction, radiation, etc.).|
+|$\dot{W}_{\text{shaft}} + \dot{W}_{\text{viscous}}$|W|kg·m²·s⁻³|**External Work Power**|Power added via mechanical components (like a turbine shaft) or boundary friction.|
+|$-p(\mathbf{V} \cdot d\mathbf{S})$|W|kg·m²·s⁻³|**Pressure Power**|The rate of work done on the fluid by pressure forces as it crosses the boundary.|
+|$(\rho\mathbf{f} \cdot \mathbf{V}) d\mathscr{V}$|W/m³|kg·m⁻¹·s⁻³|**Body Force Power**|The rate of work done by "action-at-a-distance" forces (like gravity) on the moving fluid.|
+|$\frac{\partial}{\partial t}\iiint \rho E_t d\mathscr{V}$|W|kg·m²·s⁻³|**Rate of Energy Storage**|The unsteady accumulation (or depletion) of energy inventory within the volume.|
+|$\iint \rho E_t (\mathbf{V} \cdot d\mathbf{S})$|W|kg·m²·s⁻³|**Convective Energy Flux**|The rate at which the fluid "convection" carries its total energy "package" out of the system.|
+
+### Reduced Forms
+
+For the assumptions referenced below, see Entries 21–40.
+
+**Modeling notes:** Gravity enters through the body-force work term $\rho(\mathbf{f}\cdot\mathbf{V})$, not as a stored $gz$ in the volume integral. Chemical energy from reactions is absorbed into $e$, not modeled as a separate source (Chapters 16–17).
+
+**Inviscid + no shaft work** (Entries 29, 22): Drop $\dot{W}_{\text{viscous}}$ and $\dot{W}_{\text{shaft}}$, and reduce $\dot{Q}$ to volumetric heating $\iiint \dot{q}\rho d\mathscr{V}$ only. This gives Eq. 2.20 (Entry 57).
+
+**Steady flow** (Entry 33): The storage integral vanishes:
+
+$$ \dot{Q}+\dot{W}_{\text {shaft }}+\dot{W}_{\text {viscous }}-\iint_S p \mathbf{V} \cdot d \mathbf{S}+\iiint_{\mathcal{Y}} \rho(\mathbf{f} \cdot \mathbf{V}) d \mathcal{V}=\iint_S \rho\left(e+\frac{V^2}{2}\right) \mathbf{V} \cdot d \mathbf{S} $$
+
+**1-D uniform stations + enthalpy substitution** (Entry 27): Combining the pressure-work integral with the internal-energy flux using $h = e + p/\rho$ gives the classical SFEE:
+
+$$ \dot{Q}+\dot{W}_{\text {shaft }}=\dot{m} \Delta\left(h+\frac{V^2}{2}+g z\right) $$
+
+> [!NOTE]
+> The Enthalpy Step Is Not Trivial. The appearance of $h$ in the SFEE is the result of absorbing the pressure-work surface integral into the convective flux. The pressure work $\left(-\iint p \mathbf{V} \cdot d \mathbf{S}\right)$ evaluated at an inlet or exit gives $p V A= p(\dot{m} / \rho)$, which when added to $e \dot{m}$ gives $(e+p / \rho) \dot{m}=h \dot{m}$. This is why enthalpy — not internal energy — is the natural energy variable for open systems.
+
+## 57. Inviscid Integral Energy Equation (Eq. 2.20)
+
+> [!question]
+> 
+> (a) Write the inviscid integral energy equation (Eq. 2.20) and identify all terms on both sides.
+> (b) What two assumptions are already built into this equation that distinguish it from the generalized form (Eq. 2.20a)?
+> (c) The heating term uses $\dot{q}$ (volumetric heating) rather than $\dot{Q}$ (total heat transfer). What is the physical difference, and why does the inviscid form only include $\dot{q}$?
+> (d) What does "adiabatic" mean in the context of this equation, and which term vanishes under that assumption?
+> (e) Explain why the total specific energy is $e + V^2/2$ rather than just $e$. Under what conditions could you neglect the kinetic energy contribution?
+
+> [!equation] Inviscid Integral Energy Equation (Eq. 2.20)
+> 
+> $$ \iiint_{\mathscr{V}} \dot{q} \rho d \mathscr{V} -\iint_{S} p \mathbf{V} \cdot d \mathbf{S} +\iiint_{\mathscr{V}} \rho(\mathbf{f} \cdot \mathbf{V}) d \mathscr{V} $$
+> 
+> $$ =\frac{\partial}{\partial t}\iiint_{\mathscr{V}} \rho\left(e+\frac{V^{2}}{2}\right) d \mathscr{V} +\iint_{S} \rho\left(e+\frac{V^{2}}{2}\right) \mathbf{V} \cdot d \mathbf{S} $$
+
+This is the energy equation for an inviscid flow with no shaft work. The left-hand side sums three power inputs: volumetric heating ($\dot{q}$), pressure work at the surface, and body-force work throughout the volume. The right-hand side gives the total rate of energy change — storage inside the volume plus convective flux across the surface. Two assumptions distinguish this from the generalized form (Eq. 2.20a): inviscid flow (no viscous work $\dot{W}_{\text{viscous}}$ and no conductive heat transfer) and no shaft work ($\dot{W}_{\text{shaft}} = 0$). The heating term uses volumetric $\dot{q}$ rather than total $\dot{Q}$ because, without viscosity, the only heat transfer mechanism is volumetric (e.g., radiation) — surface conduction requires viscous diffusion. Setting $\dot{q} = 0$ is the adiabatic assumption (Entry 40).
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\iiint_{\mathscr{V}} \dot{q} \rho d\mathscr{V}$|W|kg·m²·s⁻³|**Volumetric Heating**|The total rate of internal heat addition (radiation, chemical release); this is $B_1$ (Entry 53).|
+|$-\iint_{S} p \mathbf{V} \cdot d\mathbf{S}$|W|kg·m²·s⁻³|**Pressure Work Rate**|The net rate of work done on the fluid by pressure at the control surface (Entry 45).|
+|$\iiint_{\mathscr{V}} \rho(\mathbf{f}\cdot\mathbf{V}) d\mathscr{V}$|W|kg·m²·s⁻³|**Body-Force Work Rate**|The net rate of work done by body forces throughout the volume (Entry 47).|
+|$\frac{\partial}{\partial t}\iiint \rho E_t d\mathscr{V}$|W|kg·m²·s⁻³|**Energy Storage Rate**|The rate of energy accumulation inside the volume; zero in steady flow (Entry 50).|
+|$\iint \rho E_t (\mathbf{V} \cdot d\mathbf{S})$|W|kg·m²·s⁻³|**Energy Flux**|The net rate at which total energy is carried out by the flow (Entry 51).|
+
+### Reduced Forms
+
+For the assumptions referenced below, see Entries 21–40. This equation already has inviscid (Entry 31) and no-shaft-work (Entry 24) built in.
+
+**Steady flow** (Entry 33): The storage integral vanishes:
+
+$$ \iiint_{\mathcal{Y}} \dot{q} \rho d \mathcal{Y}-\iint_S p \mathbf{V} \cdot d \mathbf{S}+\iiint_{\mathcal{Y}} \rho(\mathbf{f} \cdot \mathbf{V}) d \mathcal{Y}=\iint_S \rho\left(e+\frac{V^2}{2}\right) \mathbf{V} \cdot d \mathbf{S} $$
+
+**1-D uniform stations + enthalpy substitution** (Entry 27): Absorbing pressure work into the flux via $h = e + p/\rho$ gives the inviscid, no-shaft-work SFEE:
+
+$$ \dot{q} \dot{m}=\dot{m} \Delta\left(h+\frac{V^2}{2}\right) $$
+
+> [!NOTE]
+> Why Enthalpy Appears. The pressure work $\left(-\iint p \mathbf{V} \cdot d \mathbf{S}\right)$ evaluated at an inlet or exit yields $p(\dot{m} / \rho)$. Adding this to the internal energy flux $e\dot{m}$ gives $(e+p / \rho) \dot{m}=h \dot{m}$. Enthalpy is therefore the natural energy variable for open systems — it packages internal energy and flow work together.
+
+## 58. Integral momentum equation (inviscid) (Eq. 2.11)
+
+> [!question]
+> 
+> (a) Write the integral momentum equation for an inviscid flow through a fixed control volume. Identify each term by name and physical role.
+> (b) Which fundamental law of physics does this equation represent? How does the left-hand side correspond to "rate of change of momentum" and the right-hand side to "net force"?
+> (c) What is the key assumption that makes this the _inviscid_ form? What additional term would appear if viscous effects were included?
+> (d) In the steady-flow, no-body-force case applied to a duct with one inlet and one exit, show how the equation reduces to an algebraic momentum balance. What quantity plays the role of thrust in this reduced form?
+> (e) Explain why the integral momentum equation allows you to calculate engine thrust without knowing the detailed pressure distribution inside the engine.
+
+> [!equation] Integral momentum equation (inviscid) (Eq. 2.11)
+> 
+> $$ \frac{\partial}{\partial t}\iiint_{\mathscr{V}} \rho \mathbf{V} d\mathscr{V} +\iint_{S}(\rho \mathbf{V} \cdot d \mathbf{S}) \mathbf{V} =\iiint_{\mathscr{V}} \rho \mathbf{f} d\mathscr{V}-\iint_{S} p d \mathbf{S} $$
+
+This is Newton's second law applied to a fixed region of space filled with flowing fluid. The left-hand side gives the total rate of momentum change (storage inside the volume plus convective flux across the surface), and the right-hand side gives the net force (body forces plus pressure). The key assumption making this the _inviscid_ form is that the only surface force is pressure — no viscous shear. Adding $\mathbf{F}_{\text{viscous}}$ to the right-hand side gives the viscous form (Entry 59). The integral momentum equation's power is that it lets you compute net forces (like engine thrust) without knowing the detailed pressure distribution inside the control volume — only conditions at the inlets, exits, and the net wall force appear explicitly.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\frac{\partial}{\partial t}\iiint_{\mathscr{V}} \rho \mathbf{V} d\mathscr{V}$|N|kg·m·s⁻²|**Momentum Storage**|Unsteady accumulation of momentum inside the control volume; zero in steady flow.|
+|$\iint_{S}(\rho \mathbf{V} \cdot d \mathbf{S}) \mathbf{V}$|N|kg·m·s⁻²|**Momentum Flux**|Net convective transport of momentum across the control surface.|
+|$\iiint_{\mathscr{V}} \rho \mathbf{f} d\mathscr{V}$|N|kg·m·s⁻²|**Body-Force Term**|Net body force acting on the fluid (Entry 48).|
+|$-\iint_{S} p d \mathbf{S}$|N|kg·m·s⁻²|**Pressure-Force Term**|Net surface force due to pressure (Entry 52).|
+
+### Reduced Forms
+
+For the assumptions referenced below, see Entries 21–40. This equation already has inviscid flow (Entry 31) built in.
+
+**Steady flow** (Entry 33): The storage term vanishes:
+
+$$ \iint_S(\rho \mathbf{V} \cdot d \mathbf{S}) \mathbf{V}=\iiint_{\mathcal{Y}} \rho \mathbf{f} d \mathcal{V}-\iint_{\mathcal{S}} p d \mathbf{S} $$
+
+This is the form used in the thrust derivation (Section 2.7).
+
+**Steady + no body forces** (Entries 31, 34):
+
+$$ \iint_S(\rho \mathbf{V} \cdot d \mathbf{S}) \mathbf{V}=-\iint_S p d \mathbf{S} $$
+
+**1-D uniform stations** (Entry 27): For a single-inlet, single-exit duct (steady, no body forces), the $x$-component becomes:
+
+$$ \dot{m} V_{x, \text { out }}-\dot{m} V_{x, \text { in }}=\left(p_{\text {in }} A_{\text {in }}-p_{\text {out }} A_{\text {out }}\right)_x+F_{\text {surface }, x} $$
+
+where $F_{\text{surface}, x}$ is the net pressure force from the solid walls — the quantity that becomes thrust in propulsion applications.
+
+> [!NOTE]
+> The integral momentum equation lets you calculate net forces (like engine thrust) without knowing the detailed pressure distribution inside the control volume. The complex internal pressure field is "buried" inside the volume — only conditions at the inlets, exits, and the net wall force appear explicitly. This is the key advantage demonstrated in the thrust derivation of Eq. 2.45.
+
+## 59. Integral momentum equation (with viscous surface force) (Eq. 2.11a)
+
+> [!question]
+> 
+> (a) Write the integral momentum equation including viscous surface forces (Eq. 2.11a). How does it differ from the inviscid form (Eq. 2.11)?
+> (b) What does $\mathbf{F}_{\text{viscous}}$ physically represent, and why is it called a "lumped" term?
+> (c) How do you recover the inviscid momentum equation (Eq. 2.11) from this equation? Under what conditions is that reduction valid?
+> (d) For an external aerodynamics problem where you want to compute drag on a body using a control volume, why is it generally unsafe to drop $\mathbf{F}_{\text{viscous}}$?
+> (e) In the 1-D uniform inlet/exit simplification, how does the algebraic force balance differ from the inviscid version?
+
+> [!equation] Integral momentum equation (with viscous surface force) (Eq. 2.11a)
+> 
+> $$ \frac{\partial}{\partial t}\iiint_{\mathscr{V}} \rho \mathbf{V} d\mathscr{V} +\iint_{S}(\rho \mathbf{V} \cdot d \mathbf{S}) \mathbf{V} =\iiint_{\mathscr{V}} \rho \mathbf{f} d\mathscr{V}-\iint_{S} p d \mathbf{S}+\mathbf{F}_{\text{viscous}} $$
+
+This is the most general form of the integral momentum equation for a fixed control volume. It differs from the inviscid form (Entry 58) only by the addition of $\mathbf{F}_{\text{viscous}}$ on the right-hand side. This term is a lumped resultant — it represents the net integral of all viscous shear and normal stresses over the control surface, but appears as a single vector rather than a detailed stress distribution. Setting $\mathbf{F}_{\text{viscous}} = 0$ recovers the inviscid form exactly. For external aerodynamics problems where you want to compute drag, dropping $\mathbf{F}_{\text{viscous}}$ is generally unsafe because skin-friction drag is a viscous effect. For internal flows, it represents frictional pressure losses along the walls.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\mathbf{F}_{\text{viscous}}$|N|kg·m·s⁻²|**Viscous Surface Force**|The net resultant of all viscous stresses on the control surface; zero in the inviscid form (Eq. 2.11).|
+
+### Reduced Forms
+
+For the assumptions referenced below, see Entries 21–40.
+
+**Steady flow** (Entry 33): The storage term vanishes:
+
+$$ \iint_S(\rho \mathbf{V} \cdot d \mathbf{S}) \mathbf{V}=\iiint_{\mathcal{Y}} \rho \mathbf{f} d \mathcal{Y}-\iint_S p d \mathbf{S}+\mathbf{F}_{\text {viscous }} $$
+
+**1-D uniform stations** (Entry 27): The force balance on a duct now includes both pressure and viscous wall contributions:
+
+$$ \dot{m}\left(V_{\text {out }}-V_{\text {in }}\right)=\left(p_{\text {in }} A_{\text {in }}-p_{\text {out }} A_{\text {out }}\right)+F_{\text {pressure, walls }}+F_{\text {viscous, walls }} $$
+
+> [!NOTE]
+> When Does $\mathbf{F}_{\text{viscous}}$ Matter? For external aerodynamics, $\mathbf{F}_{\text{viscous}}$ contributes skin-friction drag. For internal flows (pipes, ducts), it represents frictional pressure losses along the walls. In both cases, it acts to decelerate the flow and dissipate mechanical energy into heat. If you are computing drag on a body using a control volume, you generally _need_ this term — it is only safe to drop it when the control surface is entirely in an inviscid region.
+
+# Derived / Composite Results
+
+## 60. Newton’s second law (constant mass) (Eq. 2.4)
+
+> [!question]
+> 
+> (a) Write Newton's second law for a body of constant mass. What assumption distinguishes this from the more general form (Eq. 2.3)?
+> (b) In the context of fluid mechanics, why is this form insufficient on its own for analyzing a control volume? What complication does a flowing fluid introduce that a solid body does not?
+> (c) The general form $\frac{d}{dt}(m\mathbf{V}) = \mathbf{F}$ expands via the product rule into two terms. What are they, and which one vanishes under the constant-mass assumption?
+
+> [!equation] Newton’s second law (constant mass) (Eq. 2.4)
+> 
+> $$ \mathbf{F}=m\frac{d\mathbf{V}}{dt}=m\mathbf{a} $$
+
+This is Newton's second law with the constant-mass assumption applied: since $m$ does not change with time, it can be pulled out of the derivative $\frac{d}{dt}(m\mathbf{V})$ to give $m\frac{d\mathbf{V}}{dt} = m\mathbf{a}$. The product rule $\frac{d}{dt}(m\mathbf{V}) = m\frac{d\mathbf{V}}{dt} + \mathbf{V}\frac{dm}{dt}$ shows that the $\mathbf{V}\frac{dm}{dt}$ term vanishes when $m$ is constant. This form is sufficient for solid bodies and closed systems, but insufficient on its own for a control volume in fluid mechanics because fluid continuously enters and leaves — the "mass" in the region changes, so the general form (Entry 61) is needed as the starting point for deriving the integral momentum equation.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\mathbf{F}$|N|kg·m·s⁻²|**Net Force**|The vector sum of all external forces (pressure, gravity, friction) acting on the body.|
+|$m$|kg|kg|**Constant Mass**|The fixed quantity of matter being accelerated; does not change with time.|
+|$\mathbf{a} = \frac{d\mathbf{V}}{dt}$|m/s²|m·s⁻²|**Acceleration**|The rate of change of velocity; the kinematic response to the applied net force.|
+
+## 61. Newton’s second law (general form) (Eq. 2.3)
+
+> [!question]
+> 
+> (a) Write Newton's second law in its most general form. Why is this form "more general" than $\mathbf{F} = m\mathbf{a}$?
+> (b) In the derivation of the integral momentum equation, this general form serves as the starting point. What two contributions to the time rate of change of momentum emerge when this principle is applied to a fixed control volume?
+> (c) Give a physical example of a system where the mass changes with time, making the general form necessary instead of $F = ma$.
+
+> [!equation] Newton’s second law (general form) (Eq. 2.3)
+> 
+> $$ \frac{d}{dt}(m\mathbf{V})=\mathbf{F} $$
+
+This equation states that the net external force acting on a system is equal to the total time rate of change of its momentum. Unlike the simpler $F=ma$ form, this general version allows for the possibility that both the velocity _and_ the mass of the system can vary with time.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$m\mathbf{V}$|N·s|kg·m·s⁻¹|**Momentum**|The product of mass and velocity; the quantity whose rate of change equals the net force.|
+|$\frac{d}{dt}(m\mathbf{V})$|N|kg·m·s⁻²|**Rate of Momentum Change**|The instantaneous change in the momentum inventory; mathematically, it expands to $m\frac{d\mathbf{V}}{dt} + \mathbf{V}\frac{dm}{dt}$.|
+|$\mathbf{F}$|N|kg·m·s⁻²|**Net Force**|The total external influence acting on the system from the surroundings.|
+
+## 62. Rocket thrust equation (special case of Eq. 2.45 with $\dot{m}_i=0$)
+
+> [!question]
+> 
+> (a) Write the rocket thrust equation. How is it derived as a special case of the general engine thrust equation (Eq. 2.45)?
+> (b) Identify the two physical contributions to rocket thrust and explain what each represents.
+> (c) What does it mean for a nozzle to be "perfectly expanded"? Which term in the equation vanishes in that case, and what is thrust then equal to?
+> (d) How does the equation simplify for operation in the vacuum of space ($p_\infty = 0$)?
+> (e) Unlike a jet engine, a rocket has no inlet momentum drag. Why not?
+
+> [!equation] Rocket thrust equation (special case of Eq. 2.45 with $\dot{m}_i=0$)
+> 
+> $$ T=\dot{m}_{e} V_{e}+\left(p_{e}-p_{\infty}\right) A_{e} $$
+
+This is the thrust equation for a rocket, obtained from the general engine thrust equation (Entry 67) by setting $\dot{m}_i = 0$ — a rocket carries all propellant internally, so there is no incoming airflow and no ram drag. The two contributions are momentum thrust ($\dot{m}_e V_e$, the reaction force from expelling mass at high speed) and pressure thrust ($(p_e - p_\infty)A_e$, the force from any pressure mismatch at the exit). For a perfectly expanded nozzle ($p_e = p_\infty$), the pressure thrust vanishes and $T = \dot{m}_e V_e$. In the vacuum of space ($p_\infty = 0$), the pressure thrust becomes $p_e A_e$, giving maximum thrust: $T = \dot{m}_e V_e + p_e A_e$.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\dot{m}_e V_e$|N|kg·m·s⁻²|**Momentum Thrust**|The primary force generated by the time-rate of change of momentum of the exhaust gas.|
+|$p_e - p_\infty$|Pa|kg·m⁻¹·s⁻²|**Pressure Mismatch**|The exit-to-ambient pressure difference; zero for a perfectly expanded nozzle.|
+|$(p_e - p_\infty)A_e$|N|kg·m·s⁻²|**Pressure Thrust**|The force resulting from the pressure mismatch acting over the entire exit plane area.|
+|$A_e$|m²|m²|**Exit Area**|The cross-sectional area of the nozzle at the point where the gas is released into the atmosphere.|
+|$\dot{m}_e$|kg/s|kg·s⁻¹|**Propellant Mass Flow**|The rate at which burned fuel and oxidizer are being converted into high-speed exhaust.|
+
+### Reduced Forms
+
+For the general assumptions (steady, inviscid, uniform properties), see Entries 21–40.
+
+**Defining specialization:** $\dot{m}_i = 0$ — a rocket carries all propellant internally, so there is no incoming airflow and no ram drag. This is what distinguishes this equation from the general thrust equation (Entry 67).
+
+**Perfectly expanded nozzle** ($p_e = p_\infty$): The pressure thrust vanishes, leaving $T = \dot{m}_e V_e$ — purely momentum thrust.
+
+**Vacuum operation** ($p_\infty = 0$): The pressure thrust becomes $p_e A_e$, giving maximum thrust: $T = \dot{m}_e V_e + p_e A_e$.
+
+## 63. Total force on the control volume (Eq. 2.7)
+
+> [!question]
+> 
+> (a) Write the expression for the total force on the fluid in a control volume for an inviscid flow (Eq. 2.7). Identify the two contributions.
+> (b) Explain the physical meaning of the negative sign on the pressure integral.
+> (c) If the pressure is uniform over the entire control surface, what does the pressure integral evaluate to? What does this imply about net thrust from uniform pressure?
+> (d) This expression represents the $\mathbf{F}$ in Newton's second law. In the integral momentum equation, what appears on the other side of the equals sign?
+
+> [!equation] Total force on the control volume (Eq. 2.7)
+> 
+> $$ \mathbf{F}=\iiint_{\mathscr{V}}\rho \mathbf{f} d\mathscr{V}-\iint_{S}p d\mathbf{S} $$
+
+This equation gives the total force acting on the fluid inside a control volume for an inviscid flow. It sums two contributions: the body force (gravity, etc.) acting throughout the volume, and the net pressure force acting on the surface. The negative sign on the pressure integral accounts for the convention that $d\mathbf{S}$ points outward while pressure pushes inward. If the pressure is uniform everywhere on the surface, the pressure integral is zero (the pushes cancel from all sides) — a net pressure force requires a pressure gradient. This expression is the $\mathbf{F}$ on the right-hand side of the integral momentum equation; the left-hand side is the total rate of momentum change $\mathbf{A}_1 + \mathbf{A}_2$ (Entry 65).
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\iiint_{\mathscr{V}}\rho \mathbf{f} d\mathscr{V}$|N|kg·m·s⁻²|**Body Force Contribution**|The sum of "action-at-a-distance" forces (like gravity) acting on every unit of mass inside the volume.|
+|$-\iint_{S}p d\mathbf{S}$|N|kg·m·s⁻²|**Pressure Force Contribution**|The net inward "squeeze" from the surrounding fluid acting on the boundary of the control volume.|
+|$\mathbf{F}$|N|kg·m·s⁻²|**Net External Force**|The total vector sum of all influences; this is the "$\mathbf{F}$" that appears in the general form of Newton's Second Law.|
+|$p d\mathbf{S}$|N|kg·m·s⁻²|**Elemental Pressure Force**|The force on a tiny patch of the surface; the negative sign flips it from the outward normal to the inward push.|
+
+## 64. Total rate of change of energy of the fluid as it flows through the control volume (Eq. 2.19)
+
+> [!question]
+> 
+> (a) Write the expression for $B_3$, the total rate of change of energy of the fluid flowing through the control volume. Identify the two terms and explain what each represents.
+> (b) In steady-state flow, which of the two terms vanishes? What survives?
+> (c) Explain the parallel structure between $B_3$ (energy), the momentum equation's left-hand side ($\mathbf{A}_1 + \mathbf{A}_2$), and the continuity equation. What pattern do all three share?
+
+> [!equation] Total rate of change of energy of the fluid as it flows through the control volume (Eq. 2.19)
+> 
+> $$ B_3=\frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho\left(e+\frac{V^2}{2}\right) d\mathscr{V} +\iint_{S}(\rho \mathbf{V}\cdot d\mathbf{S})\left(e+\frac{V^2}{2}\right) $$
+
+This groups the energy “storage” term inside the control volume and the net energy flux through the control surface to form the total rate of energy change for the flowing fluid.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho E_t d\mathscr{V}$|W|kg·m²·s⁻³|**Energy Storage Rate**|The rate of energy accumulation inside the volume; zero in steady flow (Entry 50).|
+|$\iint_{S}(\rho \mathbf{V} \cdot d\mathbf{S}) E_t$|W|kg·m²·s⁻³|**Net Energy Flux**|The net rate at which energy is carried out by the flow (Entry 51).|
+|$B_3$|W|kg·m²·s⁻³|**Total Energy-Change Rate**|Storage plus flux; balanced by $B_1 + B_2$ in the power balance (Entry 54).|
+
+This equation represents the "Net Energy Ledger" for the fluid system. It combines two ways energy can change: by piling up inside the volume (storage) or by being carried across the boundaries by the flow (convection). Together, these terms account for the total rate at which the fluid's energy "account" is fluctuating. Think of this as the Total Power Demand of the fluid. If you want to speed up the flow or heat it up, you have to satisfy both terms. You must provide enough energy to increase the local "inventory" inside your system and enough to cover the energy that the fluid "takes with it" as it exits the boundary. In steady-state engineering, the storage term often vanishes, leaving only the flux term to balance the power inputs.
+
+## 65. Total time rate of change of momentum (Eq. 2.10)
+
+> [!question]
+> 
+> (a) Write the expression for the total time rate of change of momentum of the fluid flowing through a control volume (Eq. 2.10). Identify $\mathbf{A}_1$ and $\mathbf{A}_2$ and explain the physical mechanism each captures.
+> (b) In steady flow, which term vanishes and why? What does this mean about the source of all momentum changes?
+> (c) During a transient event like rocket ignition, why is $\mathbf{A}_2$ significant?
+> (d) This expression equals $\frac{d}{dt}(m\mathbf{V})$ on the left-hand side of Newton's second law. What appears on the right-hand side in the integral momentum equation?
+
+> [!equation] Total time rate of change of momentum (Eq. 2.10)
+> 
+> $$ \frac{d}{dt}(m\mathbf{V})=\mathbf{A}_1+\mathbf{A}_2 =\iint_{S}(\rho \mathbf{V}\cdot d\mathbf{S}) \mathbf{V}+\frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho \mathbf{V} d\mathscr{V} $$
+
+This equation defines the total rate at which the "Motion Content" of a fluid system is changing. It accounts for two distinct physical mechanisms: momentum being physically carried across the boundaries by the flowing mass (Flux) and momentum building up or depleting within the fixed region itself (Storage). Think of this as the Momentum Balance Sheet. In a steady-state system, the "Storage" term ($\mathbf{A}_2$) is zero, meaning any change in momentum is purely due to the difference between what flows in and what flows out ($\mathbf{A}_1$). If you are analyzing a transient event—like a rocket engine's initial ignition—the "Storage" term captures how the fluid inside the chamber is accelerating before it even reaches the exit.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\mathbf{A}_1 = \iint_{S}(\rho \mathbf{V}\cdot d\mathbf{S}) \mathbf{V}$|N|kg·m·s⁻²|**Momentum Flux**|**Convective Transport:** The rate at which the flow "carries" its own momentum vector across the control surface.|
+|$\mathbf{A}_2 = \frac{\partial}{\partial t}\iiint_{\mathscr{V}}\rho \mathbf{V} d\mathscr{V}$|N|kg·m·s⁻²|**Momentum Storage**|**Unsteady Accumulation:** The rate at which the total momentum inventory inside the volume changes over time.|
+|$\mathbf{A}_1+\mathbf{A}_2$|N|kg·m·s⁻²|**Total Momentum Rate**|The combined rate of momentum change; equals $\mathbf{F}_{\text{net}}$ by Newton's second law.|
+
+## 66. Total work rate on the fluid (Eq. 2.16)
+
+> [!question]
+> 
+> (a) Write the expression for $B_2$, the total mechanical work rate on the fluid (Eq. 2.16). Identify the two contributions and the physical mechanism behind each.
+> (b) Why does the pressure work term carry a negative sign while the body force work term does not?
+> (c) Under what conditions would the body force work contribution be negligible compared to the pressure work?
+> (d) How does $B_2$ combine with $B_1$ in the control volume power balance?
+
+> [!equation] Total work rate on the fluid (Eq. 2.16)
+> 
+> $$ B_2=-\iint_{S} p \mathbf{V}\cdot d\mathbf{S}+\iiint_{\mathscr{V}}\rho(\mathbf{f}\cdot\mathbf{V}) d\mathscr{V} $$
+
+This equation gives the total mechanical power input to the fluid, combining two contributions: pressure work at the surface (Entry 45) and body-force work throughout the volume (Entry 47). The pressure term carries a negative sign because of the outward-normal convention on $d\mathbf{S}$ (see Entry 6), while the body-force term does not because it is a volume integral with no sign convention issue. Body-force work is negligible compared to pressure work in most aerodynamic applications (high speed, small elevation changes). $B_2$ combines with the heating term $B_1$ in the power balance $B_1 + B_2 = B_3$ (Entry 54).
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$-\iint_{S} p \mathbf{V}\cdot d\mathbf{S}$|W|kg·m²·s⁻³|**Pressure Work Rate**|**Surface Power:** The rate of work done on the fluid by external pressure at the boundary. Positive when fluid is pushed into the volume.|
+|$\iiint_{\mathscr{V}}\rho(\mathbf{f}\cdot\mathbf{V}) d\mathscr{V}$|W|kg·m²·s⁻³|**Body-Force Work Rate**|**Volumetric Power:** The rate of work done by forces like gravity acting on the bulk of the moving fluid.|
+|$B_2$|W|kg·m²·s⁻³|**Total Work Rate**|The net mechanical power input; this is the term that combines with heat ($B_1$) to balance the energy change ($B_3$).|
+
+## 67. Uninstalled engine thrust equation (Eq. 2.45)
+
+> [!question]
+> 
+> (a) Write the uninstalled engine thrust equation (Eq. 2.45) and identify each term by physical name.
+> (b) What is "ram drag" and which term represents it? Why does a faster flight speed increase this penalty?
+> (c) Under what nozzle condition does the pressure thrust term $(p_e - p_\infty)A_e$ vanish? What is the thrust then equal to?
+> (d) The derivation of this equation uses Newton's third law at a key step. Explain where and why.
+> (e) Why is this called the "uninstalled" thrust? What effects are excluded by the assumption of uniform $p_\infty$ on the external surface?
+> (f) Explain the fundamental advantage of using the integral momentum equation to compute thrust, rather than integrating the detailed pressure distribution over every internal engine component.
+
+> [!equation] Uninstalled engine thrust equation (Eq. 2.45)
+> 
+> $$ T=\dot{m}_{e} V_{e}-\dot{m}_{i} V_{\infty}+\left(p_{e}-p_{\infty}\right) A_{e} $$
+
+This equation gives the net forward force (thrust) produced by an air-breathing engine, derived from the integral momentum equation applied to a control volume surrounding the engine. Thrust equals the net change in momentum flux ($\dot{m}_e V_e - \dot{m}_i V_\infty$) plus a pressure-mismatch correction ($(p_e - p_\infty)A_e$). The term $\dot{m}_i V_\infty$ is the ram drag — the momentum the incoming air already carries, which the engine did not create (see Entry 18). When the nozzle is perfectly expanded ($p_e = p_\infty$), the pressure thrust vanishes and $T = \dot{m}_e V_e - \dot{m}_i V_\infty$. This is called "uninstalled" thrust because the external surface is assumed to see uniform $p_\infty$, neglecting aerodynamic interference from the aircraft nacelle. The key advantage of this approach is that the complex internal pressure field inside the engine is never needed — only inlet, exit, and external conditions appear.
+
+|**Expression**|**Units**|**Base Units**|**Name**|**Description**|
+|---|---|---|---|---|
+|$\dot{m}_e V_e$|N|kg·m·s⁻²|**Gross Momentum Thrust**|The total force generated by the momentum of the exhaust gas leaving the engine.|
+|$\dot{m}_i V_\infty$|N|kg·m·s⁻²|**Inlet Momentum Drag**|The "Ram Drag"; the momentum cost of bringing the incoming air into the engine.|
+|$(p_e - p_\infty)A_e$|N|kg·m·s⁻²|**Pressure Thrust**|The net force caused by the pressure difference between the exhaust gas and the ambient atmosphere.|
+|$T$|N|kg·m·s⁻²|**Uninstalled Thrust**|The net axial force produced by the engine itself, excluding any aerodynamic interference from the aircraft.|
+
+### Reduced Forms
+
+For the general assumptions (steady, inviscid, uniform properties, no body forces), see Entries 21–40.
+
+**Equation-specific assumptions:**
+
+- **Free-stream conditions at the inlet.** The air enters at ambient conditions $V_\infty$, $p_\infty$, $\rho_\infty$. In off-design flight, a streamtube extending far upstream must be used, though the resulting equation has the same form.
+- **Constant $p_\infty$ on the external surface (uninstalled thrust).** The ambient pressure on the outside of the engine is assumed uniform at $p_\infty$. This neglects aerodynamic interference from the aircraft or nacelle, which is why the result is called the _uninstalled_ thrust. Installation effects (inlet distortion, nacelle drag) require separate corrections.
+
+**Perfectly expanded nozzle** ($p_e = p_\infty$): The pressure thrust vanishes, leaving $T = \dot{m}_e V_e - \dot{m}_i V_\infty$ — thrust is entirely due to the net change in momentum flux.
