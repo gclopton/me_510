@@ -14,7 +14,6 @@
   "number-headings-obsidian",
   "obsidian-hover-editor",
   "obsidian-style-settings",
-  "copy-inline-code",
   "obsidian-wrap-with-shortcuts",
   "text-snippets-obsidian",
   "paste-from-history",
@@ -40,5 +39,6 @@
   "vault-manager-status",
   "callout-manager-managed",
   "gc-explorer-indicators",
-  "callout-outline"
+  "callout-outline",
+  "colored-horizontal-rules"
 ]
